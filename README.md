@@ -53,6 +53,7 @@ npm run build
 
 ## Roadmap MVP
 
-1. Convertire e validare i file JSON sorgente in `data/questions.json`, aggiungendo spiegazioni e riferimenti normativi.
-2. Pubblicare l'app su GitHub e collegarla a Vercel per i deploy automatici.
-3. Implementare Supabase in una seconda fase: autenticazione, profilo, storico quiz, risposte e statistiche persistenti.
+1. Sistemare lo stile generale dell'app, con priorità a leggibilità, mobile-first e coerenza visiva.
+2. Fare il fine-tuning delle funzionalità del quiz e dei flussi di navigazione.
+3. Aggiungere e validare il resto dei file JSON nel database locale delle domande, includendo spiegazioni e riferimenti normativi quando disponibili.
+4. Implementare Supabase in una seconda fase: autenticazione, profilo, storico quiz, risposte e statistiche persistenti.
