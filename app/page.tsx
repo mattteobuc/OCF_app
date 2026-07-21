@@ -1,3 +1,19 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-export default function LandingPage() { return <main className="mx-auto flex min-h-screen max-w-2xl flex-col justify-center px-6"><p className="mb-4 font-bold text-blue-700">OCF TRAINER</p><h1 className="text-4xl font-bold tracking-tight">Preparati all'esame OCF, una domanda alla volta.</h1><p className="mt-5 max-w-lg text-lg leading-relaxed text-slate-600">Quiz rapidi, spiegazioni chiare e progressi sempre visibili. Tutto il necessario per iniziare.</p><Link href="/login" className="mt-8"><Button>Inizia ad allenarti</Button></Link></main>; }
+export default function LandingPage() {
+  return (
+    <main className="mx-auto flex min-h-screen max-w-2xl flex-col justify-center px-6">
+      <p className="mb-4 font-bold text-blue-700">OCF TRAINER</p>
+      <h1 className="text-4xl font-bold tracking-tight">
+        Preparati all'esame OCF, una domanda alla volta.
+      </h1>
+      <p className="mt-5 max-w-lg text-lg leading-relaxed text-slate-600">
+        Quiz rapidi, spiegazioni chiare e progressi sempre visibili. Tutto il
+        necessario per iniziare.
+      </p>
+      <Link href="/login" className="mt-8">
+        <Button>Inizia ad allenarti</Button>
+      </Link>
+    </main>
+  );
+}

@@ -1,7 +1,16 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-export const metadata: Metadata = { title: "OCF Trainer", description: "Preparati all'esame OCF" };
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="it"><body>{children}</body></html>;
+export const metadata: Metadata = {
+  title: "OCF Trainer",
+  description: "Preparati all'esame OCF",
+};
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html lang="it">
+      <body>{children}</body>
+    </html>
+  );
 }

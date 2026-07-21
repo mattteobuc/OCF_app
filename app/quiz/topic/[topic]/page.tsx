@@ -1,4 +1,15 @@
 import { PageShell } from "@/components/page-shell";
 import { QuizClient } from "@/app/quiz/quiz-client";
 import { getQuestionsByTopic } from "@/lib/question-service";
-export default async function TopicQuizPage({ params }: { params: Promise<{ topic: string }> }) { const { topic } = await params; return <PageShell><QuizClient questions={getQuestionsByTopic(decodeURIComponent(topic))} /></PageShell>; }
+export default async function TopicQuizPage({
+  params,
+}: {
+  params: Promise<{ topic: string }>;
+}) {
+  const { topic } = await params;
+  return (
+    <PageShell>
+      <QuizClient questions={getQuestionsByTopic(decodeURIComponent(topic))} />
+    </PageShell>
+  );
+}
