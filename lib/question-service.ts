@@ -1,7 +1,32 @@
 import questions from "@/data/questions.json";
 import type { Question } from "@/types/question";
 
-const allQuestions = questions as Question[];
+type SourceQuestion = {
+  id: string;
+  domanda: string;
+  risposte: string[];
+  "risposta corretta": string;
+  livello: string;
+  categoria: string;
+  "sub-contenuto": string;
+};
+
+const answerIds = ["A", "B", "C", "D"];
+const allQuestions: Question[] = (questions as SourceQuestion[]).map(
+  (question) => ({
+    id: Number(question.id),
+    topic: question.categoria,
+    subtopic: question["sub-contenuto"],
+    difficulty: Number(question.livello),
+    question: question.domanda,
+    answers: question.risposte.map((text, index) => ({
+      id: answerIds[index],
+      text,
+      correct: text === question["risposta corretta"],
+    })),
+    updatedAt: "2026-07-21",
+  }),
+);
 
 export const getAllQuestions = () => allQuestions;
 export const getQuestionById = (id: number) =>

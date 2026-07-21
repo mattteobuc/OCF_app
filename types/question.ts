@@ -7,7 +7,7 @@ export type Question = {
   difficulty: number;
   question: string;
   answers: Answer[];
-  explanation: string;
-  reference: string;
+  explanation?: string;
+  reference?: string;
   updatedAt: string;
 };

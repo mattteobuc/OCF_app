@@ -48,8 +48,12 @@ export function QuestionCard({
               ? "Corretto!"
               : `Errato. Risposta corretta: ${correct?.id}`}
           </p>
-          <p className="mt-2 text-sm">{question.explanation}</p>
-          <p className="mt-2 text-xs font-medium">{question.reference}</p>
+          {question.explanation ? (
+            <p className="mt-2 text-sm">{question.explanation}</p>
+          ) : null}
+          {question.reference ? (
+            <p className="mt-2 text-xs font-medium">{question.reference}</p>
+          ) : null}
         </div>
       ) : null}
       <Button
