@@ -50,3 +50,9 @@ npm run lint
 npm run format:check
 npm run build
 ```
+
+## Roadmap MVP
+
+1. Convertire e validare i file JSON sorgente in `data/questions.json`, aggiungendo spiegazioni e riferimenti normativi.
+2. Pubblicare l'app su GitHub e collegarla a Vercel per i deploy automatici.
+3. Implementare Supabase in una seconda fase: autenticazione, profilo, storico quiz, risposte e statistiche persistenti.
