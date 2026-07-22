@@ -1,6 +1,9 @@
 import { PageShell } from "@/components/page-shell";
 import { QuizClient } from "@/app/quiz/quiz-client";
 import { getQuestionsByTopic } from "@/lib/question-service";
+
+export const dynamic = "force-dynamic";
+
 export default async function TopicQuizPage({
   params,
 }: {

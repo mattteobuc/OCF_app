@@ -12,6 +12,30 @@ type SourceQuestion = {
 };
 
 const answerIds = ["A", "B", "C", "D"];
+
+function shuffle<T>(items: T[]) {
+  const shuffled = [...items];
+  for (let index = shuffled.length - 1; index > 0; index -= 1) {
+    const randomIndex = Math.floor(Math.random() * (index + 1));
+    [shuffled[index], shuffled[randomIndex]] = [
+      shuffled[randomIndex],
+      shuffled[index],
+    ];
+  }
+  return shuffled;
+}
+
+function shuffleQuestion(question: Question): Question {
+  const shuffledAnswers = shuffle(question.answers);
+  return {
+    ...question,
+    answers: shuffledAnswers.map((answer, index) => ({
+      ...answer,
+      id: answerIds[index],
+    })),
+  };
+}
+
 const allQuestions: Question[] = (questions as SourceQuestion[]).map(
   (question) => ({
     id: Number(question.id),
@@ -32,11 +56,15 @@ export const getAllQuestions = () => allQuestions;
 export const getQuestionById = (id: number) =>
   allQuestions.find((question) => question.id === id);
 export const getRandomQuestions = (count: number) =>
-  [...allQuestions].sort(() => Math.random() - 0.5).slice(0, count);
+  shuffle(allQuestions)
+    .slice(0, count)
+    .map(shuffleQuestion);
 export const getQuestionsByTopic = (topic: string) =>
-  allQuestions.filter(
-    (question) => question.topic.toLowerCase() === topic.toLowerCase(),
-  );
+  shuffle(
+    allQuestions.filter(
+      (question) => question.topic.toLowerCase() === topic.toLowerCase(),
+    ),
+  ).map(shuffleQuestion);
 export const getTopics = () => [
   ...new Set(allQuestions.map((question) => question.topic)),
 ];
