@@ -19,7 +19,7 @@ Apri `http://localhost:3000`.
 ## Configurare Supabase
 
 1. Crea un progetto Supabase e abilita il provider Email in Authentication.
-2. In **Authentication → URL Configuration**, aggiungi `http://localhost:3000/dashboard` e l'URL di produzione come redirect URL.
+2. In **Authentication → URL Configuration**, aggiungi `http://localhost:3000/dashboard` e l'URL di produzione come redirect URL. Il login usa un magic link via email.
 3. Esegui il file `supabase/migrations/20260721000000_initial_schema.sql` nello SQL Editor (oppure con Supabase CLI).
 4. Copia Project URL e anon key in `.env.local`:
 
@@ -28,7 +28,17 @@ NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
 ```
 
-Senza variabili Supabase l'app resta navigabile in modalità demo; l'accesso email non viene eseguito.
+Senza variabili Supabase l'app resta navigabile in modalità demo; il login e il salvataggio dei risultati non vengono eseguiti.
+
+### Dati persistenti
+
+La migrazione crea tre tabelle protette da Row Level Security:
+
+- `profiles`: creato automaticamente dal trigger di Supabase quando nasce un utente;
+- `quiz_history`: salva punteggio, domande, risposte corrette/errate, durata e data di ogni quiz autenticato;
+- `user_answers`: disponibile per la successiva persistenza del dettaglio delle singole risposte.
+
+Dopo il login, il risultato viene salvato automaticamente quando si apre la pagina del riepilogo. La pagina Profilo legge lo storico dell'utente autenticato e calcola quiz completati, domande risposte, accuratezza e tempo medio. Le policy RLS impediscono a un utente di leggere o scrivere dati appartenenti ad altri utenti.
 
 ## Domande locali
 
@@ -56,4 +66,4 @@ npm run build
 1. Sistemare lo stile generale dell'app, con priorità a leggibilità, mobile-first e coerenza visiva.
 2. Fare il fine-tuning delle funzionalità del quiz e dei flussi di navigazione.
 3. Aggiungere e validare il resto dei file JSON nel database locale delle domande, includendo spiegazioni e riferimenti normativi quando disponibili.
-4. Implementare Supabase in una seconda fase: autenticazione, profilo, storico quiz, risposte e statistiche persistenti.
+4. Implementare Supabase: autenticazione, profilo, storico quiz e statistiche persistenti. Il dettaglio delle singole risposte resta il prossimo incremento.

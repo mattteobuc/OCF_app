@@ -4,12 +4,20 @@ import { useEffect, useState } from "react";
 import { PageShell } from "@/components/page-shell";
 import { Button } from "@/components/ui/button";
 import { ScoreCard } from "@/components/score-card";
+import { saveQuizResult } from "@/lib/user-data";
 import type { QuizResult } from "@/types/quiz";
 export default function ResultPage() {
   const [result, setResult] = useState<QuizResult>();
   useEffect(() => {
     const saved = sessionStorage.getItem("ocf-quiz-result");
-    if (saved) setResult(JSON.parse(saved));
+    if (!saved) return;
+    const parsed = JSON.parse(saved) as QuizResult;
+    setResult(parsed);
+    const savedKey = `ocf-quiz-result-saved:${saved}`;
+    if (sessionStorage.getItem(savedKey)) return;
+    void saveQuizResult(parsed).then(({ saved: wasSaved }) => {
+      if (wasSaved) sessionStorage.setItem(savedKey, "true");
+    });
   }, []);
   if (!result)
     return (
