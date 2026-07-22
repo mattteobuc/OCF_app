@@ -1,0 +1,18 @@
+[
+  {
+    "id": "1",
+    "domanda": "Ai sensi dell'articolo 102 del decreto legislativo n. 58/1998 (Testo Unico della Finanza), in materia di offerte al pubblico di acquisto o di scambio, entro quanti giorni dalla comunicazione alla Consob della decisione di promuovere un’offerta pubblica di acquisto l’offerente è tenuto a presentare, sempre alla Consob, il documento d’offerta destinato alla pubblicazione?",
+    "risposte": [
+      "Non oltre venti giorni",
+      "Non oltre sessanta giorni",
+      "Entro trenta giorni",
+      "Entro novanta giorni"
+    ],
+    "risposta corretta": "Non oltre venti giorni",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio",
+    "explanation": "L’articolo 102 del d. lgs. n. 58/1998 (Testo Unico della Finanza) stabilisce che l’offerente deve presentare il documento d’offerta destinato alla pubblicazione entro venti giorni dalla comunicazione alla Consob della decisione di promuovere un’offerta pubblica di acquisto.",
+    "reference": "Articolo 102 del d. lgs. n. 58/1998 (Testo Unico della Finanza)"
+  }
+]
