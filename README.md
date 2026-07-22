@@ -18,8 +18,8 @@ Apri `http://localhost:3000`.
 
 ## Configurare Supabase
 
-1. Crea un progetto Supabase e abilita il provider Email in Authentication.
-2. In **Authentication → URL Configuration**, aggiungi `http://localhost:3000/dashboard` e l'URL di produzione come redirect URL. Il login usa un magic link via email.
+1. Crea un progetto Supabase e abilita il provider Email in Authentication. Sono disponibili registrazione/accesso con email e password e magic link.
+2. In **Authentication → URL Configuration**, aggiungi `http://localhost:3000/dashboard` e l'URL di produzione come redirect URL.
 3. Esegui il file `supabase/migrations/20260721000000_initial_schema.sql` nello SQL Editor (oppure con Supabase CLI).
 4. Copia Project URL e anon key in `.env.local`:
 
@@ -28,7 +28,15 @@ NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
 ```
 
-Senza variabili Supabase l'app resta navigabile in modalità demo; il login e il salvataggio dei risultati non vengono eseguiti.
+Senza variabili Supabase l'app resta navigabile in modalità demo; registrazione, login e salvataggio dei risultati non vengono eseguiti.
+
+La pagina `/login` permette di:
+
+- creare un account con nome opzionale, email e password;
+- accedere con email e password;
+- richiedere un magic link come alternativa al login con password.
+
+Se la conferma email è attiva nel progetto Supabase, dopo la registrazione l'utente deve aprire il link ricevuto prima di poter accedere. Il trigger `handle_new_user` copia il nome inserito nel record `profiles`.
 
 ### Dati persistenti
 
