@@ -4,7 +4,7 @@ export function PageShell({ children }: { children: ReactNode }) {
   return (
     <>
       <Navbar />
-      <main className="mx-auto min-h-screen max-w-2xl px-5 py-7">
+      <main className="mx-auto min-h-[calc(100vh-73px)] max-w-5xl px-5 py-8 sm:px-8 sm:py-10">
         {children}
       </main>
     </>

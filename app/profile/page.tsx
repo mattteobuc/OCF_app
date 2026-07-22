@@ -4,8 +4,9 @@ import { EmptyState } from "@/components/empty-state";
 export default function ProfilePage() {
   return (
     <PageShell>
-      <h1 className="text-3xl font-bold">Profilo e statistiche</h1>
-      <p className="mt-2 text-slate-600">
+      <p className="text-sm font-semibold uppercase tracking-widest text-[var(--primary)]">Il tuo spazio</p>
+      <h1 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">Profilo e statistiche</h1>
+      <p className="mt-3 text-[var(--muted)]">
         Le tue statistiche compariranno qui dopo il primo quiz autenticato.
       </p>
       <div className="mt-6 grid grid-cols-2 gap-3">
