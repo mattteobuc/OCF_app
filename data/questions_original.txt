@@ -1,0 +1,1456 @@
+[
+  {
+    "id": "1",
+    "domanda": "Ai sensi dell'articolo 102 del decreto legislativo n. 58/1998 (Testo Unico della Finanza), in materia di offerte al pubblico di acquisto o di scambio, entro quanti giorni dalla comunicazione alla Consob della decisione di promuovere un’offerta pubblica di acquisto l’offerente è tenuto a presentare, sempre alla Consob, il documento d’offerta destinato alla pubblicazione?",
+    "risposte": [
+      "Non oltre venti giorni",
+      "Non oltre sessanta giorni",
+      "Entro trenta giorni",
+      "Entro novanta giorni"
+    ],
+    "risposta corretta": "Non oltre venti giorni",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "2",
+    "domanda": "Ai sensi del comma 1 dell’art. 98-ter del d. lgs. n. 58/1998 (TUF), in materia di offerta al pubblico di quote o azioni di Oicr aperti, l’offerta al pubblico di quote o azioni di Oicr aperti italiani, FIA UE e non UE è preceduta da una comunicazione:",
+    "risposte": [
+      "alla Consob",
+      "a Borsa Italiana Spa",
+      "al Ministero dell’economia e delle finanze",
+      "alla Banca d’Italia"
+    ],
+    "risposta corretta": "alla Consob",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "3",
+    "domanda": "Ai sensi del comma 7 dell'art. 94-bis del d. lgs. n. 58/1998 (TUF), in tema di offerte al pubblico di prodotti finanziari diversi dai titoli e dalle quote o azioni di Oicr aperti, gli investitori che hanno già accettato di acquistare o sottoscrivere i prodotti finanziari prima della pubblicazione di un supplemento hanno il diritto di revocare la loro accettazione, sempre che il fatto nuovo significativo, l'errore o l'imprecisione rilevante siano emersi o siano stati rilevati:",
+    "risposte": [
+      "prima della chiusura del periodo di offerta o della consegna dei prodotti finanziari, se precedente",
+      "entro i cinque giorni successivi alla chiusura del periodo di offerta o dalla consegna dei prodotti finanziari, se precedente",
+      "in occasione della chiusura del periodo di offerta o della consegna dei prodotti finanziari, se precedente",
+      "entro i dieci giorni successivi alla chiusura del periodo di offerta o dalla consegna dei prodotti finanziari, se precedente"
+    ],
+    "risposta corretta": "prima della chiusura del periodo di offerta o della consegna dei prodotti finanziari, se precedente",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "4",
+    "domanda": "Nel caso di società diverse dalle PMI, ai sensi del comma 1-bis dell'articolo 106 del d. lgs. n. 58/1998 (Testo Unico della Finanza), in assenza di altro socio che detenga una partecipazione più elevata, l’offerta pubblica di acquisto totalitaria è promossa da chiunque, a seguito di acquisti, venga a detenere una partecipazione superiore alla soglia del:",
+    "risposte": ["25%", "15%", "20%", "10%"],
+    "risposta corretta": "25%",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "5",
+    "domanda": "Ai sensi dell’art. 39 della delibera Consob 11971/1999 (c.d. Regolamento emittenti), il comunicato dell’emittente in materia di offerta pubblica deve indicare i nominativi:",
+    "risposte": [
+      "dei componenti degli organi di amministrazione e controllo, sia presenti che assenti alla seduta",
+      "dei soci che detengono una partecipazione inferiore all’1% del capitale",
+      "dei componenti degli organi di amministrazione e controllo presenti alla seduta, ma non di quelli assenti",
+      "dei componenti dell’organo di controllo e della società di revisione"
+    ],
+    "risposta corretta": "dei componenti degli organi di amministrazione e controllo, sia presenti che assenti alla seduta",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "6",
+    "domanda": "Ai sensi dell'articolo 4 della delibera Consob 11971/1999 (c.d. Regolamento emittenti), la comunicazione con cui si chiede l'approvazione del prospetto di offerta (c.d. domanda di approvazione (ai sensi dell’art. 20 del Il Regolamento (UE) 2017/1129 c.d. Regolamento prospetto)) è redatta:",
+    "risposte": [
+      "in formato elettronico ricercabile, in conformità al modello pubblicato sul sito internet della Consob in formato elettronico ricercabile in conformità al modello in allegato 1A",
+      "a scelta dell'offerente, in formato cartaceo ovvero elettronico ricercabile, in conformità al modello pubblicato sul sito internet della Consob in allegato 1A",
+      "in una qualsiasi modalità informatica",
+      "in formato elettronico ricercabile, solo se si tratta di offerta al pubblico totalitaria in formato elettronico, solo se si tratta di offerta al pubblico totalitaria"
+    ],
+    "risposta corretta": "in formato elettronico ricercabile, in conformità al modello pubblicato sul sito internet della Consob in formato elettronico ricercabile in conformità al modello in allegato 1A",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "7",
+    "domanda": "Ai sensi dell’art. 44 della delibera Consob 11971/1999 (c.d. Regolamento emittenti), in tema di offerte concorrenti e rilanci, è corretto affermare che:",
+    "risposte": [
+      "i rilanci sono effettuati mediante pubblicazione di un avviso contenente la natura e l'entità del rilancio, nonché l'avvenuto rilascio di garanzie integrative",
+      "le offerte concorrenti e i rilanci sono ammessi solo se il corrispettivo globale per ciascuna categoria di strumenti finanziari interessata è superiore a quello dell'ultima offerta o rilancio",
+      "le offerte concorrenti sono pubblicate fino a tre giorni prima della data prevista per la chiusura del periodo di adesione dell'offerta precedente",
+      "i rilanci possono essere effettuati fino al giorno precedente alla chiusura del periodo di adesione dell'ultima offerta"
+    ],
+    "risposta corretta": "i rilanci sono effettuati mediante pubblicazione di un avviso contenente la natura e l'entità del rilancio, nonché l'avvenuto rilascio di garanzie integrative",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "8",
+    "domanda": "Secondo il comma 1 dell’art. 100-bis del d. lgs. n. 58/1998 (TUF), in tema di offerta al pubblico di sottoscrizione e di vendita, l'acquirente, che agisce per scopi estranei all'attività imprenditoriale o professionale, può far valere la nullità del contratto nel caso in cui le azioni di società offerte al pubblico siano state già oggetto di un collocamento riservato a investitori qualificati?",
+    "risposte": [
+      "Sì, può farlo se nei dodici mesi successivi le azioni siano state sistematicamente rivendute al pubblico in assenza del prospetto di offerta, a meno che tale rivendita non ricada in una delle ipotesi di esenzione previste dalla disciplina in materia",
+      "No, a meno che la Consob non autorizzi, d’intesa con la Banca d’Italia",
+      "Sì, può farlo se nei ventiquattro mesi successivi le azioni siano state sistematicamente rivendute al pubblico in assenza del prospetto di offerta, a meno che tale rivendita non ricada in una delle ipotesi di esenzione previste dalla disciplina in materia",
+      "Sì, può farlo se il collocamento riservato si è svolto in Italia; non può farlo se il collocamento riservato si è svolto all’estero"
+    ],
+    "risposta corretta": "Sì, può farlo se nei dodici mesi successivi le azioni siano state sistematicamente rivendute al pubblico in assenza del prospetto di offerta, a meno che tale rivendita non ricada in una delle ipotesi di esenzione previste dalla disciplina in materia",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "9",
+    "domanda": "In base al comma 2 dell'art. 94 del d. lgs. n. 58/1998 (TUF), qual è l'autorità nazionale competente in materia di offerta al pubblico di titoli, ai sensi dell'art. 31 del regolamento UE 2017/1129 del Parlamento europeo e del Consiglio, del 14 giugno 2017 (regolamento prospetto)?",
+    "risposte": [
+      "La Consob",
+      "Borsa Italiana Spa",
+      "Il Ministero dell’Economia e delle Finanze",
+      "La Banca d’Italia"
+    ],
+    "risposta corretta": "La Consob",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "10",
+    "domanda": "Ai sensi del comma 9 dell'art. 94 del d. lgs. n. 58/1998 (TUF), in materia di offerta al pubblico di titoli, le azioni risarcitorie sono esercitate entro cinque anni dalla pubblicazione del prospetto, salvo che l'investitore provi di avere scoperto le falsità delle informazioni o le omissioni nei:",
+    "risposte": [
+      "due anni precedenti l’esercizio dell’azione",
+      "tre anni precedenti l’esercizio dell’azione",
+      "cinque anni precedenti l’esercizio dell’azione",
+      "dieci anni precedenti l’esercizio dell’azione"
+    ],
+    "risposta corretta": "due anni precedenti l’esercizio dell’azione",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "11",
+    "domanda": "Ai sensi dell'art. 5 della delibera Consob 11971/1999 (c.d. Regolamento emittenti), per l’offerta di prodotti finanziari diversi dai titoli, chi può stabilire il contenuto del prospetto qualora questo non sia stato definito in via generale?",
+    "risposte": [
+      "La Consob",
+      "Il Ministro della Giustizia",
+      "La Banca d'Italia",
+      "Il Ministro dell'Economia e delle Finanze"
+    ],
+    "risposta corretta": "La Consob",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "12",
+    "domanda": "Ai sensi dell’art. 8 della delibera Consob 11971/1999 (c.d. Regolamento emittenti), la domanda di approvazione del prospetto di offerta al pubblico prende data:",
+    "risposte": [
+      "dal giorno stesso in cui il prospetto perviene alla Consob",
+      "dal giorno successivo a quello in cui il prospetto perviene alla Consob",
+      "dalla settimana successiva a quella in cui il prospetto perviene alla Consob",
+      "dal mese successivo a quello in cui il prospetto perviene alla Consob"
+    ],
+    "risposta corretta": "dal giorno stesso in cui il prospetto perviene alla Consob",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "13",
+    "domanda": "In materia di trasparenza nelle offerte pubbliche di acquisto o scambio, l’art. 41 della delibera Consob 11971/1999 (c.d. Regolamento emittenti) dispone che, durante il periodo intercorrente tra la data di comunicazione alla CONSOB ex art. 102, comma 1 del d. lgs. n. 58/1998 (T.U.F.), e la data ultima di pagamento del corrispettivo, i soggetti interessati comunicano entro la giornata:",
+    "risposte": [
+      "alla Consob e al mercato le operazioni da essi compiute, anche indirettamente o per interposta persona",
+      "al Ministro dell'Economia e delle Finanze le operazioni da essi compiute per interposta persona",
+      "solo alla Consob le operazioni da essi compiute per interposta persona",
+      "al mercato e alla Banca d’Italia le operazioni da essi compiute per interposta persona"
+    ],
+    "risposta corretta": "alla Consob e al mercato le operazioni da essi compiute, anche indirettamente o per interposta persona",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "14",
+    "domanda": "Secondo l'articolo 108 del decreto legislativo n. 58/1998 (Testo Unico della Finanza), in materia di offerte pubbliche di acquisto obbligatorie, l’offerente ha l’obbligo di acquistare i restanti titoli da chi ne faccia richiesta se, a seguito di un’offerta pubblica totalitaria, viene a detenere una partecipazione al capitale rappresentato da titoli in una società italiana quotata almeno pari al:",
+    "risposte": [
+      "novantacinque per cento",
+      "venti per cento",
+      "cinquanta per cento",
+      "settantacinque per cento"
+    ],
+    "risposta corretta": "novantacinque per cento",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "15",
+    "domanda": "In virtù di quanto disposto dall’art. 37 della delibera Consob 11971/1999 (c.d. Regolamento emittenti), quale informazione deve necessariamente essere riportata nel comunicato che dà notizia al mercato dell'intervenuta comunicazione alla CONSOB contenente la decisione di una offerta pubblica di acquisto o di scambio?",
+    "risposte": [
+      "L’emittente",
+      "I soggetti collegati all’offerente",
+      "L’offerente, ma non necessariamente i soggetti controllanti",
+      "In ogni caso, l’evento da cui è sorto l’obbligo di promuovere un’offerta"
+    ],
+    "risposta corretta": "L’emittente",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "16",
+    "domanda": "Ai sensi del comma 3 dell'art. 98-ter del d. lgs. n. 58/1998 (TUF), in materia di KID e prospetto nell’offerta al pubblico di quote o azioni di Oicr aperti, il prospetto deve consentire agli investitori di poter ragionevolmente comprendere la natura e i rischi dell’investimento proposto e, di conseguenza, effettuare una scelta consapevole in merito all’investimento. È corretto affermare che il prospetto ha natura precontrattuale?",
+    "risposte": [
+      "Sì, il prospetto ha natura precontrattuale",
+      "Sì, ma solo nel caso di offerta al pubblico di importo superiore a euro 1.000.000",
+      "No, il prospetto non ha natura precontrattuale",
+      "Dipende dalle caratteristiche del prospetto"
+    ],
+    "risposta corretta": "Sì, il prospetto ha natura precontrattuale",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "17",
+    "domanda": "Ai sensi dell’art. 37 della delibera Consob 11971/1999 (c.d. Regolamento emittenti), in caso di decisione di promuovere una offerta pubblica di acquisto o di scambio, la comunicazione resa nota al mercato e all'emittente, indica:",
+    "risposte": [
+      "tra le altre cose, le le motivazioni dell’offerta e le condizioni alle quali l’offerta è subordinata",
+      "solo l’offerente e i soggetti controllanti e le persone che agiscono di concerto con l’offerente in relazione all’offerta;",
+      "solo il comunicato dell'emittente e la documentazione relativa all'avvenuta costituzione delle garanzie di esatto adempimento;",
+      "esclusivamente le informazioni sull’emittente"
+    ],
+    "risposta corretta": "tra le altre cose, le le motivazioni dell’offerta e le condizioni alle quali l’offerta è subordinata",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "18",
+    "domanda": "Ai sensi dell'art. 8 della delibera Consob 11971/1999 (c.d. Regolamento emittenti), se un'offerta al pubblico avente ad oggetto prodotti finanziari diversi dai titoli perviene alla Consob incompleta, le informazioni supplementari devono essere inoltrate alla Consob, previa sua richiesta all'emittente o all'offerente, entro:",
+    "risposte": [
+      "venti giorni lavorativi dalla data di ricezione della richiesta",
+      "quindici giorni lavorativi dalla data di ricezione della richiesta",
+      "dieci giorni lavorativi dalla data di ricezione della richiesta",
+      "trenta giorni lavorativi dalla data di ricezione della richiesta"
+    ],
+    "risposta corretta": "venti giorni lavorativi dalla data di ricezione della richiesta",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "19",
+    "domanda": "Secondo il comma 1 dell'articolo 108 del d. lgs. n. 58/1998 (Testo Unico della Finanza), l'offerente che detiene, a seguito di una offerta pubblica totalitaria, una partecipazione almeno pari al novantacinque per cento del capitale rappresentato da titoli in una società italiana quotata, ha l'obbligo di acquistare i restanti titoli da chi ne faccia richiesta. In questo caso, secondo il comma 5 dello stesso articolo, il relativo corrispettivo:",
+    "risposte": [
+      "assume la stessa forma di quello dell’offerta, ma il possessore dei titoli può sempre esigere che gli sia corrisposto in misura integrale un corrispettivo in contanti",
+      "può non assumere la stessa forma di quello dell'offerta, ma il possessore dei titoli può esigere che gli sia corrisposto in misura parziale un corrispettivo in contanti",
+      "è corrisposto nella forma scelta dall’offerente",
+      "è corrisposto in contanti per almeno il 50% del totale"
+    ],
+    "risposta corretta": "assume la stessa forma di quello dell’offerta, ma il possessore dei titoli può sempre esigere che gli sia corrisposto in misura integrale un corrispettivo in contanti",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "20",
+    "domanda": "Ai sensi del comma 2 dell'articolo 106 del decreto legislativo n. 58/1998 (Testo Unico della Finanza), il termine temporale entro cui effettuare l'offerta pubblica di acquisto totalitaria è:",
+    "risposte": [
+      "venti giorni",
+      "trenta giorni",
+      "quaranta giorni",
+      "sessanta giorni"
+    ],
+    "risposta corretta": "venti giorni",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "21",
+    "domanda": "Ai sensi dell'art. 34-decies della delibera Consob 11971/1999 (c.d. Regolamento emittenti), prima della pubblicazione del prospetto, chi, oltre all’offerente, può, a determinate condizioni, procedere alla raccolta di intenzioni di acquisto o sottoscrizione attinenti all’offerta al pubblico?",
+    "risposte": [
+      "L’emittente e il responsabile del collocamento",
+      "La Banca d’Italia",
+      "Soltanto l’emittente",
+      "La Consob"
+    ],
+    "risposta corretta": "L’emittente e il responsabile del collocamento",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "22",
+    "domanda": "Ai sensi del comma 3 dell'articolo 102 del decreto legislativo n. 58/1998 (TUF), in materia di offerte pubbliche di acquisto o di scambio, l'offerente promuove l'offerta non oltre venti giorni dalla comunicazione alla Consob della decisione di promuovere l’offerta. In caso di mancato rispetto del termine il documento d'offerta destinato alla pubblicazione è dichiarato irricevibile e l'offerente non può promuovere un'ulteriore offerta avente a oggetto prodotti finanziari del medesimo emittente nei successivi:",
+    "risposte": ["12 mesi", "24 mesi", "48 mesi", "36 mesi"],
+    "risposta corretta": "12 mesi",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "23",
+    "domanda": "Ai sensi dell'art. 93-bis del d. lgs. n. 58/1998 (TUF), in materia di offerta al pubblico di sottoscrizione e di vendita, rientrano nella definizione di “titoli”:",
+    "risposte": [
+      "azioni di società e altri titoli equivalenti ad azioni di società",
+      "le carte commerciali con scadenza pari a 3 mesi",
+      "i buoni del tesoro con scadenza pari a 6 mesi",
+      "solo le azioni di società"
+    ],
+    "risposta corretta": "azioni di società e altri titoli equivalenti ad azioni di società",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "24",
+    "domanda": "Secondo l'articolo 108 del decreto legislativo n. 58/1998 (Testo Unico della Finanza), l’offerente che viene a detenere, a seguito di una offerta pubblica totalitaria, una partecipazione almeno pari al novantacinque per cento del capitale rappresentato da titoli in una società italiana quotata, ha l'obbligo di acquistare i restanti titoli da chi ne faccia richiesta. In questo caso il relativo corrispettivo:",
+    "risposte": [
+      "può essere pari a quello dell’offerta pubblica totalitaria precedente",
+      "deve essere corrisposto integralmente in contanti",
+      "deve essere determinato dalla Consob",
+      "è corrisposto nella forma scelta dall’offerente"
+    ],
+    "risposta corretta": "può essere pari a quello dell’offerta pubblica totalitaria precedente",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "25",
+    "domanda": "Ai sensi dell'articolo 45 della delibera Consob 11971/1999 (c.d. Regolamento emittenti), quando si può parlare di partecipazione indiretta?",
+    "risposte": [
+      "Quando il patrimonio della società di cui si detengono i titoli è costituito in prevalenza da partecipazioni in società quotate o in società che detengono in misura prevalente partecipazioni in società quotate",
+      "Quando il patrimonio della società di cui si detengono i titoli è costituito in prevalenza da partecipazioni in società a responsabilità limitata",
+      "Quando il patrimonio della società di cui si detengono i titoli è costituito in prevalenza da partecipazioni in società che detengono in misura prevalente partecipazioni in società non quotate",
+      "Quando il patrimonio della società di cui si detengono i titoli è costituito in prevalenza da partecipazioni in società non quotate"
+    ],
+    "risposta corretta": "Quando il patrimonio della società di cui si detengono i titoli è costituito in prevalenza da partecipazioni in società quotate o in società che detengono in misura prevalente partecipazioni in società quotate",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "26",
+    "domanda": "Ai sensi del comma 1 dell'articolo 106 del decreto legislativo n. 58/1998 (Testo Unico della Finanza), un’offerta pubblica di acquisto rivolta a tutti i possessori di titoli sulla totalità dei titoli ammessi alla negoziazione in un mercato regolamentato in loro possesso, è promossa da chiunque, a seguito di acquisti ovvero di maggiorazione dei diritti di voto, venga a detenere una partecipazione superiore alla soglia del:",
+    "risposte": [
+      "30% ovvero a disporre di diritti di voto in misura superiore al 30% dei medesimi",
+      "5% ovvero a disporre di diritti di voto in misura superiore al 5% dei medesimi",
+      "10% ovvero a disporre di diritti di voto in misura superiore al 10% dei medesimi",
+      "20% ovvero a disporre di diritti di voto in misura superiore al 20% dei medesimi"
+    ],
+    "risposta corretta": "30% ovvero a disporre di diritti di voto in misura superiore al 30% dei medesimi",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "27",
+    "domanda": "Ai sensi dell’art. 49 della delibera Consob 11971/1999 (c.d. Regolamento emittenti), l’obbligo di promuovere un’offerta pubblica di acquisto totalitaria non sussiste se un altro socio dispone",
+    "risposte": [
+      "della maggioranza dei diritti di voto esercitabili nell’assemblea ordinaria",
+      "di diritti di voto in misura pari o superiore al 5% del capitale",
+      "della maggioranza dei diritti di voto esercitabili nell’assemblea straordinaria",
+      "di diritti di voto in misura pari o superiore al 10% del capitale"
+    ],
+    "risposta corretta": "della maggioranza dei diritti di voto esercitabili nell’assemblea ordinaria",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "28",
+    "domanda": "Ai sensi del comma 7 dell'art. 94-bis del d. lgs. n. 58/1998 (TUF), in tema di offerte al pubblico di prodotti finanziari diversi dai titoli e dalle quote o azioni di Oicr aperti, gli investitori che hanno già accettato di acquistare o sottoscrivere i prodotti finanziari prima della pubblicazione di un supplemento hanno il diritto di revocare la loro accettazione, sempre che il fatto nuovo significativo, l'errore o l'imprecisione rilevante siano emersi prima della chiusura del periodo di offerta o della consegna dei prodotti finanziari, se precedente. Tale diritto di revoca è esercitabile entro:",
+    "risposte": [
+      "due giorni lavorativi dopo tale pubblicazione e questo termine può essere prorogato dall’emittente o dall’offerente",
+      "una settimana dopo tale pubblicazione e questo termine può essere prorogato da Borsa Italiana Spa",
+      "dieci giorni lavorativi dopo tale pubblicazione e questo termine può essere prorogato dalla Consob",
+      "un mese dopo tale pubblicazione"
+    ],
+    "risposta corretta": "due giorni lavorativi dopo tale pubblicazione e questo termine può essere prorogato dall’emittente o dall’offerente",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "29",
+    "domanda": "Una società che ha promosso una offerta pubblica di acquisto o di scambio può, per quanto previsto dall’art. 43 della delibera Consob 11971/1999 (c.d. Regolamento emittenti), modificare la propria offerta?",
+    "risposte": [
+      "Sì, purché, tra l’altro, non riduca il quantitativo richiesto",
+      "Sì, ma solo fino al sesto giorno antecedente alla data prevista per la chiusura del periodo di adesione",
+      "Sì, ma solo in presenza di offerte concorrenti",
+      "No, l'offerta è irrevocabile e non modificabile"
+    ],
+    "risposta corretta": "Sì, purché, tra l’altro, non riduca il quantitativo richiesto",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "30",
+    "domanda": "Ai sensi dell'articolo 110 del decreto legislativo n. 58/1998 (Testo Unico della Finanza), in caso di violazione degli obblighi previsti dalla disciplina delle offerte pubbliche di acquisto obbligatorie, entro quanti mesi devono essere alienati i titoli eccedenti le percentuali indicate negli articoli 106 e 108 dello stesso Testo Unico della Finanza, in tema, rispettivamente, di “Offerta pubblica di acquisto totalitaria” e “Obbligo di acquisto”?",
+    "risposte": ["Dodici", "Quindici", "Venti", "Diciotto"],
+    "risposta corretta": "Dodici",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "31",
+    "domanda": "Secondo l’articolo 104 del decreto legislativo n. 58/1998 (Testo Unico della Finanza), in materia di difese a disposizione nel caso di un’offerta pubblica di acquisto, in mancanza di specifiche previsioni nel suo statuto, una società italiana quotata può compiere atti che possono contrastare il conseguimento degli obiettivi dell’offerta pubblica di acquisto di cui sono oggetto i suoi titoli?",
+    "risposte": [
+      "Sì, previa autorizzazione dell’assemblea ordinaria o di quella straordinaria per le delibere di competenza",
+      "Sì, ma l’unico atto in contrasto con gli obiettivi dell’offerta che può compiere è la mera ricerca di altre offerte",
+      "No, salvo autorizzazione del collegio sindacale",
+      "No, mai"
+    ],
+    "risposta corretta": "Sì, previa autorizzazione dell’assemblea ordinaria o di quella straordinaria per le delibere di competenza",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "32",
+    "domanda": "La società Alfa decide di promuovere un'offerta pubblica di acquisto sulle azioni della società Gamma, quotata nel mercato MTA di Borsa Italiana. In base all'articolo 103 del decreto legislativo n. 58/1998 (Testo Unico della Finanza), l'offerta:",
+    "risposte": [
+      "è rivolta a parità di condizioni a tutti i titolari dei prodotti finanziari che ne formano oggetto",
+      "deve essere rivolta a condizioni più favorevoli ai soci che siano anche dipendenti della società oggetto di offerta",
+      "può essere revocata per giusta causa",
+      "può essere revocata se il documento di offerta contiene la cosiddetta “clausola di revocabilità”"
+    ],
+    "risposta corretta": "è rivolta a parità di condizioni a tutti i titolari dei prodotti finanziari che ne formano oggetto",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "33",
+    "domanda": "Secondo il comma 2 dell'art. 106 del d. lgs. n. 58/1998 (TUF), in materia di offerta pubblica di acquisto totalitaria, per ciascuna categoria di titoli, l'offerta è promossa a un prezzo non inferiore a quello più elevato pagato dall'offerente e da persone che agiscono di concerto con il medesimo:",
+    "risposte": [
+      "nei dodici mesi anteriori alla comunicazione alla Consob di cui all'articolo 102, comma 1, dello stesso TUF, per acquisti di titoli della medesima categoria",
+      "il giorno che precede la comunicazione alla Consob di cui all'articolo 102, comma 1, dello stesso TUF, per acquisti di titoli della medesima categoria",
+      "nella settimana anteriore alla comunicazione alla Consob di cui all'articolo 102, comma 1, dello stesso TUF, per acquisti di titoli della medesima categoria",
+      "nei ventiquattro mesi anteriori alla comunicazione alla Consob di cui all'articolo 102, comma 1, dello stesso TUF, per acquisti di titoli della medesima categoria"
+    ],
+    "risposta corretta": "nei dodici mesi anteriori alla comunicazione alla Consob di cui all'articolo 102, comma 1, dello stesso TUF, per acquisti di titoli della medesima categoria",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "34",
+    "domanda": "Ai sensi dell'art. 34-octies della delibera Consob 11971/1999 (c.d. Regolamento emittenti), chi intende effettuare una forma di pubblicità sul territorio nazionale concernente un'offerta, per la quale è stato o sarà pubblicato un prospetto, deve trasmettere alla Consob la relativa documentazione pubblicitaria:",
+    "risposte": [
+      "contestualmente alla sua diffusione, secondo le modalità stabilite dalla Consob",
+      "almeno cinque giorni prima della sua diffusione, secondo le modalità stabilite da Borsa Italiana",
+      "almeno cinque giorni prima della sua diffusione, secondo le modalità stabilite dalla Consob",
+      "contestualmente alla sua diffusione, secondo le modalità stabilite dalla Banca d'Italia"
+    ],
+    "risposta corretta": "contestualmente alla sua diffusione, secondo le modalità stabilite dalla Consob",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "35",
+    "domanda": "Secondo il comma 4 dell'art. 100 del d. lgs. n. 58/1998 (TUF), quale autorità può individuare le offerte al pubblico di prodotti finanziari diversi dai titoli di cui all’art. 93-bis dello stesso TUF, alle quali le disposizioni in materia di offerta al pubblico di sottoscrizione e di vendita non si applicano in tutto o in parte?",
+    "risposte": [
+      "La Consob con regolamento",
+      "La Banca d'Italia mediante circolare",
+      "Il Ministero dell'economia e delle finanze mediante circolare",
+      "Borsa Italiana Spa mediante regolamento"
+    ],
+    "risposta corretta": "La Consob con regolamento",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "36",
+    "domanda": "Ai sensi del comma 1 dell'articolo 106 del decreto legislativo n. 58/1998 (Testo Unico della Finanza), i destinatari dell'offerta pubblica promossa sulla totalità dei titoli ammessi alla negoziazione in un mercato regolamentato da chi, a seguito di acquisti, venga a detenere una partecipazione superiore al 30%, sono:",
+    "risposte": [
+      "tutti i possessori dei titoli",
+      "il trenta per cento dei possessori dei titoli",
+      "il novantacinque per cento dei possessori dei titoli",
+      "il novanta per cento dei possessori dei titoli"
+    ],
+    "risposta corretta": "tutti i possessori dei titoli",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "37",
+    "domanda": "A norma dell'articolo 49 della delibera Consob 11971/1999 (c.d. Regolamento emittenti), costituisce caso di esonero dall'obbligo di offerta previsto dall'articolo 106 del d. lgs. n. 58/1998 (T.U.F.):",
+    "risposte": [
+      "il disporre, da parte di un altro socio o altri soci congiuntamente, della maggioranza dei diritti di voto esercitabili in assemblea ordinaria",
+      "il disporre, da parte di un socio di riferimento, di diritti di voto almeno pari al trenta per cento nell’assemblea ordinaria",
+      "il disporre, da parte di un socio solo, della maggioranza dei diritti di voto esercitabili in assemblea straordinaria",
+      "il disporre, da parte di cinque soci diversi, di diritti di voto almeno pari al venticinque per cento nell’assemblea ordinaria"
+    ],
+    "risposta corretta": "il disporre, da parte di un altro socio o altri soci congiuntamente, della maggioranza dei diritti di voto esercitabili in assemblea ordinaria",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "38",
+    "domanda": "Ai sensi dell'articolo 108 del decreto legislativo n. 58/1998 (Testo Unico della Finanza), l’obbligo di acquistare i restanti titoli ammessi alla negoziazione su un mercato regolamentato sussiste, se non ripristina entro novanta giorni un flottante adeguato ad assicurare il regolare andamento delle negoziazioni, in capo a chi venga a detenere una partecipazione al capitale rappresentato da titoli ammessi alla negoziazione in un mercato regolamentato superiore al:",
+    "risposte": [
+      "novanta per cento",
+      "trenta per cento",
+      "settantacinque per cento",
+      "cinquanta per cento"
+    ],
+    "risposta corretta": "novanta per cento",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "39",
+    "domanda": "Secondo il comma 1, lett. c), dell'art. 99 del d. lgs. n. 58/1998 (TUF), in caso di accertata violazione delle disposizioni in materia di offerta al pubblico di sottoscrizione e di vendita, la Consob può:",
+    "risposte": [
+      "vietare l’offerta",
+      "sospendere l’offerta per almeno trenta giorni",
+      "esigere che l'emittente o l'offerente includa nel prospetto informazioni supplementari",
+      "sospendere l’offerta per almeno sessanta giorni"
+    ],
+    "risposta corretta": "vietare l’offerta",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "40",
+    "domanda": "Ai sensi dell’art. 40 della delibera Consob 11971/1999 (c.d. Regolamento emittenti), in tema di svolgimento di una offerta pubblica di acquisto o di scambio, è corretto affermare che:",
+    "risposte": [
+      "l'efficacia dell'offerta non può essere sottoposta a condizioni il cui verificarsi dipende dalla mera volontà dell'offerente",
+      "nel caso di convocazione dell'assemblea dell'emittente, per attuare difese ai sensi dell'art.104 del TUF, il periodo di adesione stesso è prorogato di venti giorni",
+      "la CONSOB può prorogare la durata dell'offerta fino a un massimo di sessanta giorni",
+      "il periodo di adesione è concordato sempre con la CONSOB"
+    ],
+    "risposta corretta": "l'efficacia dell'offerta non può essere sottoposta a condizioni il cui verificarsi dipende dalla mera volontà dell'offerente",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "41",
+    "domanda": "In tema di offerte pubbliche di acquisto o di scambio, ai sensi dell'articolo 101-bis decreto legislativo n. 58/1998 (Testo Unico della Finanza), per 'società italiane quotate' si intendono le società con sede legale:",
+    "risposte": [
+      "nel territorio italiano e con titoli ammessi alla negoziazione in un mercato regolamentato di uno Stato comunitario",
+      "in un qualunque Stato comunitario e con titoli ammessi alla negoziazione in un mercato italiano, anche se non regolamentato",
+      "nel territorio di un qualunque Stato comunitario e con titoli ammessi alla negoziazione in un mercato regolamentato italiano",
+      "e direzione generale nel territorio italiano e con titoli ammessi alla negoziazione in un mercato regolamentato di uno Stato comunitario o extracomunitario"
+    ],
+    "risposta corretta": "nel territorio italiano e con titoli ammessi alla negoziazione in un mercato regolamentato di uno Stato comunitario",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "42",
+    "domanda": "Ai sensi del comma 4 dell’art. 98-ter del d. lgs. n. 58/1998 (TUF), in materia di offerta al pubblico di quote o azioni di Oicr aperti, trova applicazione il comma 9 dell’art. 94 dello stesso TUF, in materia di offerta al pubblico di titoli e di prodotti finaniari diversi dalle quote o azioni di Oicr aperti. Secondo quest’ultima disposizione, le azioni risarcitorie dei danni subiti dall’investitore sono di norma esercitate entro:",
+    "risposte": [
+      "cinque anni dalla pubblicazione del prospetto",
+      "tre anni dalla pubblicazione del prospetto",
+      "un anno dalla pubblicazione del prospetto",
+      "dieci anni dalla pubblicazione del prospetto"
+    ],
+    "risposta corretta": "cinque anni dalla pubblicazione del prospetto",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "43",
+    "domanda": "Si consideri il caso di un emittente che intende effettuare un'offerta al pubblico di prodotti finanziari diversi dai titoli, e pertanto svolge attività pubblicitaria per promuovere la sua offerta mediante materiale cartaceo. Ai sensi dell'articolo 34-octies della delibera Consob 11971/1999 (c.d. Regolamento emittenti), l’annuncio pubblicitario deve indicare, tra l’altro, la seguente avvertenza:",
+    "risposte": [
+      "\"Prima dell'adesione leggere il prospetto\"",
+      "“I rendimenti passati non sono indicativi di quelli futuri”",
+      "“L’emittente rispetta le norme regolamentari nonché tutti i codici di comportamento”",
+      "“La presente offerta è stata preventivamente approvata dalla Consob”"
+    ],
+    "risposta corretta": "\"Prima dell'adesione leggere il prospetto\"",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "44",
+    "domanda": "Secondo il comma 1 dell'art. 99 del d. lgs. n. 58/1998 (TUF), in caso di fondato sospetto di violazione delle disposizioni in materia di offerta al pubblico di sottoscrizione e di vendita, la Consob può sospendere, in via cautelare, l'offerta avente ad oggetto prodotti finanziari diversi dai titoli di cui all’art. 93-bis, comma 1, lett. c) dello stesso TUF, per un periodo:",
+    "risposte": [
+      "non superiore a novanta giorni",
+      "di almeno trenta giorni",
+      "non inferiore a centottanta giorni",
+      "non superiore a venti giorni"
+    ],
+    "risposta corretta": "non superiore a novanta giorni",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "45",
+    "domanda": "Il comma 2 dell’articolo 101 del d. lgs. n. 58/1998 (TUF) vieta la diffusione di qualsiasi annuncio pubblicitario riguardante offerte al pubblico di prodotti finanziari diversi dai titoli di cui all’art. 93-bis dello stesso TUF, prima della pubblicazione del prospetto. Ai sensi del comma 4, lett. b), dello stesso articolo, in caso di fondato sospetto di violazione di tale disposizione, la Consob può sospendere la pubblicità in via cautelare per un periodo:",
+    "risposte": [
+      "non superiore a novanta giorni",
+      "non inferiore a nove mesi",
+      "non superiore a centottanta giorni",
+      "indeterminato"
+    ],
+    "risposta corretta": "non superiore a novanta giorni",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "46",
+    "domanda": "Il sig. Rossi ha accettato di sottoscrivere alcuni prodotti finanziari prima della pubblicazione di un supplemento al prospetto. Supponendo che un errore sia stato rilevato prima della chiusura del periodo di offerta, ai sensi del comma 7 dell'art. 94-bis del d. lgs. n. 58/1998 (TUF), il sig. Rossi può revocare la sua accettazione?",
+    "risposte": [
+      "Sì, entro due giorni lavorativi dopo la pubblicazione del supplemento, fatta salva la proroga dell'emittente o dell'offerente",
+      "Sì, entro dieci giorni lavorativi dopo la pubblicazione del prospetto, fatta salva la proroga dell'emittente o dell'offerente",
+      "No, in quanto si tratta solo di un errore e non di un fatto nuovo significativo",
+      "Solo se il prospetto assegnava al sig. Rossi questo diritto"
+    ],
+    "risposta corretta": "Sì, entro due giorni lavorativi dopo la pubblicazione del supplemento, fatta salva la proroga dell'emittente o dell'offerente",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "47",
+    "domanda": "In base al disposto dell’art. 38 della delibera Consob 11971/1999 (c.d. Regolamento emittenti), il documento d'offerta:",
+    "risposte": [
+      "è trasmesso senza indugio alla Consob e all'emittente, anche in formato elettronico",
+      "è contestualmente inviato al Ministero della Giustizia",
+      "è inviato alla società di revisione incaricata, almeno in formato elettronico e cartaceo",
+      "deve essere diffuso tramite pubblicazione di un estratto su organi di stampa di adeguata diffusione"
+    ],
+    "risposta corretta": "è trasmesso senza indugio alla Consob e all'emittente, anche in formato elettronico",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "48",
+    "domanda": "Secondo il comma 1, lett. d), dell'art. 99 del d. lgs. n. 58/1998 (TUF), se accerta una violazione del provvedimento di sospensione in via cautelare dell’offerta per il fondato sospetto di violazione delle disposizioni in materia di offerta al pubblico di sottoscrizione e di vendita, la Consob può:",
+    "risposte": [
+      "vietare l’offerta",
+      "sospendere l’offerta per altri tre mesi",
+      "sospendere l’offerta per ulteriori sei mesi",
+      "rendere pubblico il fatto che l'offerente o l'emittente non ottempera ai propri obblighi"
+    ],
+    "risposta corretta": "vietare l’offerta",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "49",
+    "domanda": "Ai sensi del comma 7 dell'art. 94-bis del d. lgs. n. 58/1998 (TUF), in tema di offerte al pubblico di prodotti finanziari diversi dai titoli e dalle quote o azioni di Oicr aperti, gli investitori che hanno già accettato di acquistare o sottoscrivere i prodotti finanziari prima della pubblicazione di un supplemento hanno il diritto di revocare la loro accettazione se emerge un fatto nuovo significativo tre giorni dopo la chiusura del periodo di offerta?",
+    "risposte": [
+      "No, in questo caso non è possibile",
+      "Sì, ma previa autorizzazione di Borsa Italiana",
+      "Sì, perché non sono ancora trascorsi dieci giorni dalla chiusura del periodo di offerta",
+      "Solo se il prospetto lo prevede"
+    ],
+    "risposta corretta": "No, in questo caso non è possibile",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "50",
+    "domanda": "Secondo l'art. 111 del d. lgs. n. 58/1998 (TUF), affinché abbia il diritto all'acquisto dei titoli residui entro tre mesi dalla scadenza del termine per l'accettazione dell'offerta, se ha dichiarato nel documento d'offerta l'intenzione di avvalersi di tale diritto, l'offerente deve venire a detenere, a seguito di offerta pubblica totalitaria, una partecipazione nel capitale rappresentato da titoli di una società italiana quotata almeno pari al:",
+    "risposte": ["95%", "25%", "50%", "70%"],
+    "risposta corretta": "95%",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "51",
+    "domanda": "Ai sensi dell’articolo 40 della delibera Consob 11971/1999 (c.d. Regolamento emittenti), in materia di offerta pubblica, per le offerte aventi ad oggetto obbligazioni e altri titoli di debito, la durata minima del periodo di adesione è pari a:",
+    "risposte": [
+      "cinque giorni",
+      "sette giorni",
+      "dieci giorni",
+      "dodici giorni"
+    ],
+    "risposta corretta": "cinque giorni",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "52",
+    "domanda": "Ai sensi del comma 2 dell’art. 95 del d. lgs. n. 58/1998 (TUF), in materia di offerta al pubblico di titoli e di prodotti finanziari diversi dalle quote o azioni di Oicr aperti, quale autorità individua le norme di correttezza che sono tenuti ad osservare l'emittente, l'offerente e gli intermediari finanziari incaricati dell'offerta pubblica di prodotti finanziari nonché coloro che si trovano in rapporto di controllo o di collegamento con tali soggetti?",
+    "risposte": [
+      "La Consob mediante regolamento",
+      "Il Ministero dell’economia e delle finanze, mediante una circolare",
+      "Borsa Italiana Spa, mediante uno specifico regolamento",
+      "La Banca d’Italia mediante regolamento"
+    ],
+    "risposta corretta": "La Consob mediante regolamento",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "53",
+    "domanda": "Secondo il comma 3 dell'art. 100 del d. lgs. n. 58/1998 (TUF), le disposizioni in materia di offerta al pubblico di sottoscrizione e di vendita non si applicano alle offerte aventi ad oggetto prodotti finanziari diversi dai titoli di cui all’art. 93-bis, comma 1, lett. c), dello stesso TUF, e:",
+    "risposte": [
+      "di ammontare complessivo non superiore a quello indicato dalla Consob con regolamento",
+      "rivolte ai soli investitori qualificati, come definiti dalla Banca d’Italia con regolamento in base ai criteri fissati dalle disposizioni comunitarie",
+      "rivolte a un numero di soggetti non inferiore a quello indicato da Borsa Italiana con regolamento",
+      "aventi ad oggetto strumenti del mercato monetario emessi da banche con una scadenza superiore a dodici mesi"
+    ],
+    "risposta corretta": "di ammontare complessivo non superiore a quello indicato dalla Consob con regolamento",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "54",
+    "domanda": "Ai sensi del comma 1 dell'articolo 107 del d. lgs. n. 58/1998 (Testo Unico della Finanza), dato il rispetto congiunto delle altre condizioni previste, l’obbligo di offerta pubblica di acquisto totalitaria non sussiste se la partecipazione è detenuta a seguito di un’offerta pubblica di acquisto o di scambio avente a oggetto almeno il:",
+    "risposte": [
+      "sessanta per cento dei titoli di ciascuna categoria",
+      "venti per cento dei titoli di ciascuna categoria",
+      "dieci per cento dei titoli di ciascuna categoria",
+      "trenta per cento dei titoli di ciascuna categoria"
+    ],
+    "risposta corretta": "sessanta per cento dei titoli di ciascuna categoria",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "55",
+    "domanda": "Ai sensi dell'articolo 107 del decreto legislativo n. 58/1998 (TUF), in base ad una delle condizioni da rispettare affinché non sussista l'obbligo di offerta pubblica di acquisto totalitaria, l'offerente e le persone che agiscono di concerto con lui, non devono aver acquistato, anche mediante contratti a termine con scadenza successiva, nei dodici mesi precedenti la comunicazione alla Consob prevista dall'art. 102, comma 1, dello stesso TUF né durante l'offerta, partecipazioni in misura superiore:",
+    "risposte": ["all’1%", "allo 0,5%", "allo 0,3%", "allo 0,7%"],
+    "risposta corretta": "all’1%",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "56",
+    "domanda": "Ai sensi del comma 9 dell'art. 94 del d. lgs. n. 58/1998 (TUF), in materia di offerta al pubblico di titoli, entro quale termine può essere promossa l'azione risarcitoria per danni subiti dall'investitore che abbia fatto ragionevole affidamento sulla veridicità e completezza delle informazioni contenute nel prospetto d'offerta?",
+    "risposte": [
+      "Entro cinque anni dalla pubblicazione del prospetto, salvo che l'investitore provi di avere scoperto le falsità delle informazioni o le omissioni nei due anni precedenti l'esercizio dell'azione",
+      "Entro due anni dalla pubblicazione del prospetto, salvo che l'investitore provi di avere scoperto le falsità delle informazioni o le omissioni nei due anni precedenti l'esercizio dell'azione",
+      "Non è previsto un termine temporale di riferimento",
+      "Entro dieci anni dalla pubblicazione del prospetto, salvo che l'investitore provi di avere scoperto le falsità delle informazioni o le omissioni nei due anni precedenti l'esercizio dell'azione"
+    ],
+    "risposta corretta": "Entro cinque anni dalla pubblicazione del prospetto, salvo che l'investitore provi di avere scoperto le falsità delle informazioni o le omissioni nei due anni precedenti l'esercizio dell'azione",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "57",
+    "domanda": "Secondo l'articolo 108 del decreto legislativo n. 58/1998 (Testo Unico della Finanza), al fine di non essere obbligato ad acquistare i restanti titoli ammessi alla negoziazione in un mercato regolamentato da chi ne faccia richiesta, entro quanti giorni chiunque viene a detenere una partecipazione pari al novantadue per cento del capitale rappresentato da titoli ammessi alla negoziazione in un mercato regolamentato, ha l’obbligo di ripristinare un flottante sufficiente ad assicurare il regolare andamento delle negoziazioni?",
+    "risposte": ["Novanta", "Cento", "Centocinquanta", "Centoventi"],
+    "risposta corretta": "Novanta",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "58",
+    "domanda": "Ai sensi dell'articolo 108 del decreto legislativo n. 58/1998 (Testo Unico della Finanza), quale obbligo sussiste in capo a chi venga a detenere una partecipazione superiore al novanta per cento del capitale rappresentato da titoli ammessi alla negoziazione in un mercato regolamentato, se non ripristina entro novanta giorni un flottante sufficiente ad assicurare il regolare andamento delle negoziazioni?",
+    "risposte": [
+      "Acquistare i restanti titoli ammessi alla negoziazione in un mercato regolamentato da chi ne faccia richiesta",
+      "Non sussiste nessun obbligo",
+      "Vendere, entro i successivi sei mesi, una percentuale di titoli tale da ridurre la sua partecipazione al cinquanta per cento",
+      "Acquistare i restanti titoli e avviare la procedura per il delisting entro tre mesi"
+    ],
+    "risposta corretta": "Acquistare i restanti titoli ammessi alla negoziazione in un mercato regolamentato da chi ne faccia richiesta",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "59",
+    "domanda": "Ai sensi del comma 4, lett. a), dell’art. 101 del d. lgs. n. 58/1998 (TUF), in caso di fondato sospetto di violazione delle disposizioni in materia di attività pubblicitaria, relative ad un’offerta avente ad oggetti azioni di società, la Consob può sospendere la pubblicità in via cautelare per un periodo:",
+    "risposte": [
+      "non superiore a dieci giorni lavorativi consecutivi per ciascuna occasione",
+      "indeterminato",
+      "non superiore a trenta giorni lavorativi consecutivi per ciascuna occasione",
+      "non superiore a venti giorni lavorativi consecutivi per ciascuna occasione"
+    ],
+    "risposta corretta": "non superiore a dieci giorni lavorativi consecutivi per ciascuna occasione",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "60",
+    "domanda": "Ai sensi del comma 5 dell'art. 94 del d. lgs. n. 58/1998 (TUF), in materia di offerta al pubblico di titoli, una persona responsabile di talune parti delle informazioni contenute nel prospetto può rispondere dei danni subiti dall'investitore che abbia fatto ragionevole affidamento sulla veridicità e completezza delle informazioni contenute nel prospetto stesso?",
+    "risposte": [
+      "Sì, limitatamente a tali parti, a meno che non provi di aver adottato ogni diligenza allo scopo di assicurare che le informazioni in questione fossero conformi ai fatti e non presentassero omissioni tali da alterarne il senso",
+      "No, sono responsabili unicamente l’offerente e l'eventuale garante",
+      "No, sono responsabili unicamente l'emittente e l'eventuale garante",
+      "Sì, limitatamente a tali parti, insieme alla Consob"
+    ],
+    "risposta corretta": "Sì, limitatamente a tali parti, a meno che non provi di aver adottato ogni diligenza allo scopo di assicurare che le informazioni in questione fossero conformi ai fatti e non presentassero omissioni tali da alterarne il senso",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "61",
+    "domanda": "Ai sensi del comma 1-ter dell'articolo 106 del decreto legislativo n. 58/1998 (Testo Unico della Finanza), in tema di offerta pubblica di acquisto totalitaria, quale delle seguenti affermazioni è corretta?",
+    "risposte": [
+      "Gli statuti delle PMI possono prevedere una soglia diversa da quella del trenta per cento per l’obbligo di offerta, comunque non inferiore al venticinque per cento né superiore al quaranta per cento",
+      "Nelle società diverse dalle PMI l'offerta pubblica di acquisto totalitaria è promossa anche da chiunque, a seguito di acquisti, venga a detenere una partecipazione superiore alla soglia del quindici per cento",
+      "L’obbligo di offerta pubblica di acquisto totalitaria non sussiste se il superamento della soglia del trenta per cento deriva da maggiorazione dei diritti di voto",
+      "Il corrispettivo dell’offerta non può essere costituito da titoli"
+    ],
+    "risposta corretta": "Gli statuti delle PMI possono prevedere una soglia diversa da quella del trenta per cento per l’obbligo di offerta, comunque non inferiore al venticinque per cento né superiore al quaranta per cento",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "62",
+    "domanda": "Ai sensi dell'art. 96 del d. lgs. n. 58/1998 (TUF), in materia di offerta al pubblico di titoli e di prodotti finanziari diversi dalle quote o azioni di Oicr aperti, un’offerta avente ad oggetto prodotti finanziari diversi dai titoli può essere effettuata se il revisore legale si è dichiarato impossibilitato ad esprimere un giudizio sull'ultimo bilancio dell'emittente?",
+    "risposte": [
+      "No, e non può essere effettuata nemmeno se il revisore legale ha espresso un giudizio negativo",
+      "Sì, mentre non può essere effettuata se il revisore legale ha espresso un giudizio negativo",
+      "No, a meno che la Banca d'Italia e il Ministero dell’economia e delle finanze non autorizzino",
+      "Sì, purché la Consob e Borsa Italiana Spa autorizzino"
+    ],
+    "risposta corretta": "No, e non può essere effettuata nemmeno se il revisore legale ha espresso un giudizio negativo",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "63",
+    "domanda": "Secondo l’art. 105 del decreto legislativo n. 58/1998 (Testo Unico della Finanza), in tema di offerte pubbliche di acquisto obbligatorie, con riferimento ai titoli emessi da una società italiana ammessi alla negoziazione in mercati regolamentati italiani, è una \"partecipazione\" una quota di tali titoli che attribuiscono diritti di voto nelle deliberazioni assembleari riguardanti nomina o revoca:",
+    "risposte": [
+      "degli amministratori o del consiglio di sorveglianza, anche se detenuta indirettamente per il tramite di fiduciari",
+      "degli amministratori, purché detenuta direttamente",
+      "degli amministratori, anche se detenuta indirettamente, purché per il tramite di fiduciari e non per interposta persona",
+      "del consiglio di sorveglianza, purché detenuta direttamente"
+    ],
+    "risposta corretta": "degli amministratori o del consiglio di sorveglianza, anche se detenuta indirettamente per il tramite di fiduciari",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "64",
+    "domanda": "Nelle offerte pubbliche di acquisto o di scambio, i rilanci e le altre modifiche, ai sensi dell’art. 44 della delibera Consob 11971/1999 (c.d. Regolamento emittenti), sono, di norma, effettuati entro il termine di:",
+    "risposte": [
+      "cinque giorni dalla pubblicazione dell'offerta concorrente o di un precedente rilancio o modifica di altro offerente",
+      "otto giorni dalla pubblicazione dell'offerta concorrente o di un precedente rilancio o modifica di altro offerente",
+      "quindici giorni dalla pubblicazione dell'offerta concorrente o di un precedente rilancio o modifica di altro offerente",
+      "sette giorni dalla pubblicazione dell'offerta concorrente o di un precedente rilancio o modifica di altro offerente"
+    ],
+    "risposta corretta": "cinque giorni dalla pubblicazione dell'offerta concorrente o di un precedente rilancio o modifica di altro offerente",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "65",
+    "domanda": "Ai sensi del comma 3 dell'articolo 106 del decreto legislativo n. 58/1998 (Testo Unico Bancario), la Consob disciplina con regolamento le ipotesi in cui l’obbligo di offerta consegue ad acquisti superiori al:",
+    "risposte": [
+      "5% da parte di coloro che già detengono una partecipazione superiore al 30% senza detenere la maggioranza dei diritti di voto nell'assemblea ordinaria",
+      "15% da parte di coloro che già detengono una partecipazione superiore al 25% senza detenere la maggioranza dei diritti di voto nell'assemblea ordinaria",
+      "8% da parte di coloro che già detengono una partecipazione superiore al 15% senza detenere la maggioranza dei diritti di voto nell'assemblea ordinaria",
+      "7% da parte di coloro che già detengono una partecipazione superiore al 20% senza detenere la maggioranza dei diritti di voto nell'assemblea ordinaria"
+    ],
+    "risposta corretta": "5% da parte di coloro che già detengono una partecipazione superiore al 30% senza detenere la maggioranza dei diritti di voto nell'assemblea ordinaria",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "66",
+    "domanda": "Ai sensi del comma 4 dell'art. 102 del d. lgs. n. 58/1998 (TUF), in materia di offerte pubbliche di acquisto o di scambio, se il documento d’offerta presentato alla Consob è idoneo a consentire ai destinatari di pervenire ad un fondato giudizio sull'offerta, la Consob lo approva entro:",
+    "risposte": [
+      "quindici giorni, che diventano trenta giorni nel caso di offerte aventi ad oggetto o corrispettivo prodotti finanziari non quotati o negoziati in sistemi multilaterali di negoziazione",
+      "sessanta giorni",
+      "trenta giorni, che diventano sessanta giorni nel caso di offerte aventi ad oggetto o corrispettivo prodotti finanziari non quotati o negoziati in sistemi multilaterali di negoziazione",
+      "novanta giorni"
+    ],
+    "risposta corretta": "quindici giorni, che diventano trenta giorni nel caso di offerte aventi ad oggetto o corrispettivo prodotti finanziari non quotati o negoziati in sistemi multilaterali di negoziazione",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "67",
+    "domanda": "Il sig. Bianchi ha accettato di acquistare alcuni prodotti finanziari prima della pubblicazione di un supplemento al prospetto. Supponendo che un’imprecisione rilevante sia emersa due giorni dopo la chiusura del periodo di offerta, ai sensi del comma 7 dell'art. 94-bis del d. lgs. n. 58/1998 (TUF), il sig. Bianchi può revocare la sua accettazione?",
+    "risposte": [
+      "No, in questo caso non è possibile",
+      "Solo se il prospetto assegnava al sig. Bianchi questo diritto",
+      "Sì, in quanto non è trascorsa più di una settimana dalla chiusura del periodo di offerta",
+      "Sì, in quanto non sono trascorsi più di cinque giorni dalla chiusura del periodo di offerta"
+    ],
+    "risposta corretta": "No, in questo caso non è possibile",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "68",
+    "domanda": "Ai sensi dell’art. 49 della delibera Consob 11971/1999 (c.d. Regolamento emittenti), il superamento della soglia rilevante ai fini dell’obbligo di promuovere un’offerta pubblica totalitaria, se avvenuto in presenza di un intervento di rafforzamento patrimoniale nonché di una situazione di crisi attestata dall’ammissione a una procedura concorsuale, determina:",
+    "risposte": [
+      "un esonero dall’obbligo di offerta",
+      "un obbligo di offerta pubblica parziale avente ad oggetto almeno il 10% del capitale",
+      "un obbligo di offerta pubblica preventiva",
+      "in ogni caso un obbligo di offerta pubblica totalitaria"
+    ],
+    "risposta corretta": "un esonero dall’obbligo di offerta",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "69",
+    "domanda": "Ai sensi dell’art. 40 della delibera Consob 11971/1999 (c.d. Regolamento emittenti), le adesioni a offerte pubbliche di acquisto o di scambio:",
+    "risposte": [
+      "possono avvenire anche direttamente presso l'offerente",
+      "non possono essere in alcun caso raccolte sul mercato regolamentato",
+      "possono avvenire esclusivamente presso intermediari abilitati alla prestazione di servizi di investimento",
+      "si perfezionano con la presa visione del documento d'offerta"
+    ],
+    "risposta corretta": "possono avvenire anche direttamente presso l'offerente",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "70",
+    "domanda": "In tema di offerte pubbliche di acquisto o di scambio, ai sensi dell’art. 101-bis del decreto legislativo n. 58/1998 (Testo Unico della Finanza), in materia di offerte pubbliche di acquisto o di scambio, quali, tra i seguenti soggetti, sono, in ogni caso, “persone che agiscono di concerto”?",
+    "risposte": [
+      "Un soggetto, il suo controllante e le società da esso controllate",
+      "Gli aderenti a un patto parasociale, purché non sia nullo",
+      "Un soggetto e il suo controllante, ma non le società da esso controllate",
+      "Le società sottoposte a comune controllo, se superiori a 5"
+    ],
+    "risposta corretta": "Un soggetto, il suo controllante e le società da esso controllate",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "71",
+    "domanda": "Ai sensi dell'art. 5 della delibera Consob 11971/1999 (c.d. Regolamento emittenti), per l’offerta di prodotti finanziari diversi dai titoli, chi può chiedere alla Consob di stabilire il contenuto del prospetto, laddove questo non sia stato definito in via generale?",
+    "risposte": [
+      "L’emittente o l’offerente",
+      "Soltanto l’emittente",
+      "La Banca d’Italia",
+      "Soltanto l’offerente"
+    ],
+    "risposta corretta": "L’emittente o l’offerente",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "72",
+    "domanda": "Ai sensi dell'art. 48 della delibera Consob 11971/1999 (c.d. Regolamento emittenti), l'approvazione dell'offerta al pubblico preventiva parziale è:",
+    "risposte": [
+      "irrevocabile, ma è possibile approvare più offerte concorrenti",
+      "revocabile, previo consenso della Consob",
+      "revocabile",
+      "irrevocabile e non è possibile approvare più offerte concorrenti"
+    ],
+    "risposta corretta": "irrevocabile, ma è possibile approvare più offerte concorrenti",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "73",
+    "domanda": "Ai sensi dell'art. 34-decies della delibera Consob 11971/1999 (c.d. Regolamento emittenti), prima della pubblicazione del prospetto, l’offerente può procedere alla raccolta di intenzioni di acquisto o sottoscrizione attinenti all’offerta al pubblico?",
+    "risposte": [
+      "Sì, purché venga precisato che tali intenzioni non costituiscono proposte di acquisto",
+      "Sì, purché sia stata concessa autorizzazione da parte della Consob",
+      "Sì, purché sia stata concessa autorizzazione da parte della Banca d’Italia",
+      "No, mai"
+    ],
+    "risposta corretta": "Sì, purché venga precisato che tali intenzioni non costituiscono proposte di acquisto",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "74",
+    "domanda": "Ai sensi dell'articolo 110 del decreto legislativo n. 58/1998 (Testo Unico della Finanza), in caso di violazione degli obblighi previsti in materia di offerte pubbliche di acquisto obbligatorie, il diritto di voto:",
+    "risposte": [
+      "inerente all'intera partecipazione detenuta non può essere esercitato",
+      "inerente all’intera partecipazione può essere esercitato previa autorizzazione della Banca d’Italia",
+      "inerente al venti per cento della partecipazione detenuta può essere comunque esercitato",
+      "inerente alla metà della partecipazione detenuta non può essere esercitato"
+    ],
+    "risposta corretta": "inerente all'intera partecipazione detenuta non può essere esercitato",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "75",
+    "domanda": "Ai sensi dell'art. 40 della delibera Consob 11971/1999 (c.d. Regolamento emittenti), il periodo di adesione di un’offerta pubblica di acquisto totalitaria è:",
+    "risposte": [
+      "compreso tra un minimo di quindici e un massimo di venticinque giorni",
+      "compreso tra un minimo di cinque e un massimo di trenta giorni",
+      "sempre inferiore a quindici giorni",
+      "compreso tra un minimo di dieci e un massimo di venticinque giorni"
+    ],
+    "risposta corretta": "compreso tra un minimo di quindici e un massimo di venticinque giorni",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "76",
+    "domanda": "Ai sensi del comma 1 dell'art. 106 del d. lgs. n. 58/1998 (TUF), un'offerta pubblica di acquisto rivolta a tutti i possessori di titoli sulla totalità dei titoli ammessi alla negoziazione in un mercato regolamentato in loro possesso, è promossa da chiunque, a seguito di acquisti, venga a disporre di diritti di voto in misura superiore al:",
+    "risposte": [
+      "30% dei medesimi",
+      "10% dei medesimi",
+      "7% dei medesimi",
+      "15% dei medesimi"
+    ],
+    "risposta corretta": "30% dei medesimi",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "77",
+    "domanda": "Si consideri un’offerta pubblica di acquisto o di scambio, strumentale all'acquisizione del controllo secondo il diritto francese. L’offerta ha ad oggetto titoli ammessi alla negoziazione esclusivamente su mercati regolamentati italiani, emessi da una società con sede legale in Francia. Secondo l'art. 101-ter del d. lgs. n. 58/1998 (TUF), quale autorità vigila sullo svolgimento di tale offerta, per quanto concerne, in particolare, le questioni riguardanti il contenuto del documento d'offerta?",
+    "risposte": [
+      "La Consob",
+      "La European Securities and Markets Authority",
+      "La Banca Centrale Europea",
+      "Esclusivamente la competente autorità francese"
+    ],
+    "risposta corretta": "La Consob",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "78",
+    "domanda": "Si consideri l'offerta al pubblico di prodotti finanziari diversi dai titoli di cui all’art. 93-bis del d. lgs. n. 58/1998 (TUF) da parte dell'emittente Gamma. Gamma decide di diffondere un annuncio pubblicitario riguardante l'offerta prima della pubblicazione del prospetto. Ai sensi del comma 2 dell'art. 101 dello stesso TUF, può farlo?",
+    "risposte": [
+      "No, la diffusione di qualsiasi annuncio pubblicitario è vietata prima della pubblicazione del prospetto",
+      "No, a meno che l'Autorità Garante della Concorrenza e del Mercato non abbia autorizzato",
+      "Sì, previa autorizzazione della Consob",
+      "Sì, purché la documentazione relativa all'annuncio pubblicitario sia stata trasmessa alla Consob almeno dieci giorni prima della sua diffusione"
+    ],
+    "risposta corretta": "No, la diffusione di qualsiasi annuncio pubblicitario è vietata prima della pubblicazione del prospetto",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "79",
+    "domanda": "Ai sensi dell'articolo 49 della delibera Consob 11971/1999 (c.d. Regolamento emittenti), il possesso da parte di un altro socio, o di altri soci congiuntamente, della maggioranza dei diritti di voto esercitabili in assemblea ordinaria determina:",
+    "risposte": [
+      "un’esenzione dall’obbligo di offerta pubblica di acquisto",
+      "un obbligo di acquisto di concerto",
+      "un obbligo di acquisto",
+      "un obbligo di offerta pubblica concorrente"
+    ],
+    "risposta corretta": "un’esenzione dall’obbligo di offerta pubblica di acquisto",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "80",
+    "domanda": "La banca Alfa emette certificati di deposito con scadenza pari a sei mesi e intende offrirli al pubblico. In questo caso, ai sensi del comma 3 dell'art. 100 del d. lgs. n. 58/1998 (TUF), è obbligata a rispettare le disposizioni in materia di offerta al pubblico di sottoscrizione e di vendita?",
+    "risposte": [
+      "No, non è tenuta perché i certificati di deposito hanno una scadenza inferiore a dodici mesi",
+      "Sì, è obbligata in quanto i certificati di deposito hanno una scadenza superiore a tre mesi",
+      "Dipende dal numero di intermediari cui è affidato il collocamento dei certificati di deposito",
+      "Dipende dall’importo complessivo dei certificati di deposito"
+    ],
+    "risposta corretta": "No, non è tenuta perché i certificati di deposito hanno una scadenza inferiore a dodici mesi",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "81",
+    "domanda": "Secondo il comma 3 dell'art. 100 del d. lgs. n. 58/1998 (TUF), le disposizioni in materia di offerta al pubblico di sottoscrizione e di vendita non si applicano alle offerte aventi ad oggetto prodotti finanziari diversi dai titoli di cui all’art. 93-bis, comma 1, lett. c), dello stesso TUF, e:",
+    "risposte": [
+      "rivolte a un numero di soggetti non superiore a quello indicato dalla Consob con regolamento",
+      "rivolte a un numero di soggetti non inferiore a quello indicato dalla Banca d’Italia con regolamento",
+      "di ammontare complessivo non inferiore a quello indicato da Borsa Italiana con regolamento",
+      "aventi ad oggetto strumenti del mercato monetario emessi da banche con una scadenza superiore a dodici mesi"
+    ],
+    "risposta corretta": "rivolte a un numero di soggetti non superiore a quello indicato dalla Consob con regolamento",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "82",
+    "domanda": "Ai sensi dell'art. 96 del d. lgs. n. 58/1998 (TUF), in materia di offerta al pubblico di titoli e di prodotti finanziari diversi dalle quote o azioni di Oicr aperti, un’offerta avente ad oggetto prodotti finanziari diversi dai titoli può essere effettuata se il revisore legale ha espresso un giudizio negativo sull'ultimo bilancio dell'emittente?",
+    "risposte": [
+      "No, in nessun caso",
+      "No, ma può essere effettuata se il revisore legale si è dichiarato impossibilitato ad esprimere un giudizio",
+      "Sì, se la Consob e il Ministero dell’economia e delle finanze autorizzano",
+      "Sì, a condizione che un’agenzia di rating riconosciuta ed iscritta nel registro tenuto dalla Consob esprima un giudizio positivo"
+    ],
+    "risposta corretta": "No, in nessun caso",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "83",
+    "domanda": "Ai sensi del comma 4 dell'art. 102 del d. lgs. n. 58/1998 (TUF), in materia di offerte pubbliche di acquisto o di scambio, entro quindici giorni dalla presentazione del documento d'offerta, la Consob lo approva, se è idoneo a consentire ai destinatari di pervenire ad un fondato giudizio sull'offerta. Per le offerte aventi ad oggetto o corrispettivo prodotti finanziari non quotati o negoziati in sistemi multilaterali di negoziazione, il termine è di:",
+    "risposte": [
+      "trenta giorni",
+      "centoventi giorni",
+      "due mesi",
+      "novanta giorni"
+    ],
+    "risposta corretta": "trenta giorni",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "84",
+    "domanda": "Ai sensi dell'art. 8 della delibera Consob 11971/1999 (c.d. Regolamento emittenti), se un’offerta al pubblico ha ad oggetto prodotti finanziari diversi dai titoli, la Consob approva il prospetto entro:",
+    "risposte": [
+      "venti giorni lavorativi",
+      "trenta giorni lavorativi",
+      "sessanta giorni lavorativi",
+      "quarantacinque giorni lavorativi"
+    ],
+    "risposta corretta": "venti giorni lavorativi",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "85",
+    "domanda": "L'articolo 104 del decreto legislativo n. 58/1998 (Testo Unico della Finanza), in materia di difese a disposizione delle società italiane quotate i cui titoli sono oggetto di offerte pubbliche di acquisto, prevede che, salvo diversa disposizione contenuta nello statuto della società:",
+    "risposte": [
+      "l'assemblea ordinaria o quella straordinaria, per le delibere di competenza, possono autorizzare le società a compiere operazioni in contrasto con gli obiettivi dell'offerta",
+      "la responsabilità per gli atti e le operazioni compiuti in contrasto con gli obiettivi dell'offerta è del collegio sindacale della società",
+      "la mera ricerca di altre offerte costituisce atto o operazione in contrasto con gli obiettivi dell'offerta",
+      "l'obbligo di astensione dal compiere atti o operazioni in contrasto con gli obiettivi dell'offerta non si applica nei quindici giorni immediatamente precedenti la chiusura dell'offerta"
+    ],
+    "risposta corretta": "l'assemblea ordinaria o quella straordinaria, per le delibere di competenza, possono autorizzare le società a compiere operazioni in contrasto con gli obiettivi dell'offerta",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "86",
+    "domanda": "Ai sensi del comma 8 dell'art. 94 del d. lgs. n. 58/1998 (TUF), in materia di offerta al pubblico di titoli, chi può essere ritenuto civilmente responsabile esclusivamente in base alla nota di sintesi, redatta ai sensi dell'articolo 7 del regolamento prospetto?",
+    "risposte": [
+      "Nessuno, a meno che la nota di sintesi sia fuorviante, imprecisa o incoerente se letta insieme con altre parti del prospetto",
+      "L’emittente o l’offerente",
+      "La Consob",
+      "In ogni caso, le persone responsabili del prospetto, indicate nel prospetto medesimo con i loro nomi e la loro funzione"
+    ],
+    "risposta corretta": "Nessuno, a meno che la nota di sintesi sia fuorviante, imprecisa o incoerente se letta insieme con altre parti del prospetto",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "87",
+    "domanda": "Ai sensi del comma 4 dell'art. 94-bis del d. lgs. n. 58/1998 (TUF), in tema di offerte al pubblico di prodotti finanziari diversi dai titoli e dalle quote o azioni di Oicr aperti, qualunque fatto nuovo significativo, errore o imprecisione rilevanti, relativi alle informazioni contenute nel prospetto che possano influire sulla valutazione dei prodotti finanziari e che sopravvengano tra il momento in cui è approvato il prospetto e quello in cui si chiude il periodo di offerta deve essere menzionato:",
+    "risposte": [
+      "senza indebito ritardo in un supplemento al prospetto",
+      "entro un mese nella nota di sintesi del prospetto",
+      "entro dieci giorni lavorativi nel sito internet di Borsa Italiana Spa",
+      "senza indebito ritardo nel Bollettino della Consob"
+    ],
+    "risposta corretta": "senza indebito ritardo in un supplemento al prospetto",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "88",
+    "domanda": "Ai sensi del comma 1 dell'articolo 106 del decreto legislativo n. 58/1998 (Testo Unico della Finanza), chiunque, a seguito di acquisti ovvero di maggiorazione dei diritti di voto, venga a detenere una partecipazione superiore alla soglia del 30% ovvero a disporre di diritti di voto in misura superiore al 30% dei medesimi promuove un’offerta pubblica di acquisto rivolta a tutti i possessori di titoli:",
+    "risposte": [
+      "sulla totalità dei titoli dell'emittente ammessi alla negoziazione in un mercato regolamentato in loro possesso",
+      "su almeno il 95% dei titoli dell’emittente, anche se non ammessi alla negoziazione in un mercato regolamentato",
+      "su almeno un ulteriore 30% dei titoli di ciascuna categoria ammessi alla negoziazione in un mercato regolamentato",
+      "sulla totalità dei titoli dell'emittente in loro possesso, anche se non ammessi alla negoziazione in mercato regolamentato"
+    ],
+    "risposta corretta": "sulla totalità dei titoli dell'emittente ammessi alla negoziazione in un mercato regolamentato in loro possesso",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "89",
+    "domanda": "Ai sensi dell’articolo 107 decreto legislativo n. 58/1998 (del Testo Unico della Finanza), in tema di offerta pubblica di acquisto preventiva, l’offerente è tenuto a promuovere l'offerta pubblica di acquisto totalitaria se, nei dodici mesi successivi alla chiusura dell'offerta preventiva, l'offerente medesimo o persone che agiscono di concerto con esso, abbiano effettuato acquisti di partecipazioni, anche mediante contratti a termine con scadenza successiva:",
+    "risposte": [
+      "in misura superiore all'1%",
+      "pari allo 0,3%",
+      "in misura superiore allo 0,5%",
+      "in misura superiore allo 0,2%"
+    ],
+    "risposta corretta": "in misura superiore all'1%",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "90",
+    "domanda": "Ai sensi del comma 1 dell'articolo 106 del decreto legislativo n. 58/1998 (Testo Unico della Finanza), quale dei seguenti soggetti è obbligato a promuovere un’offerta pubblica di acquisto totalitaria?",
+    "risposte": [
+      "Tizio, che, a seguito di acquisti, è venuto a disporre di diritti di voto in misura pari al 35% dei medesimi",
+      "Mevio, che, a seguito di maggiorazione dei diritti di voto, è venuto a disporre di diritti di voto in misura pari al 12% dei medesimi",
+      "Caio, che, a seguito di acquisti, è venuto a disporre di diritti di voto in misura pari al 7% dei medesimi",
+      "Sempronio, che, a seguito di maggiorazione dei diritti di voto, è venuto a disporre di diritti di voto in misura pari al 20% dei medesimi"
+    ],
+    "risposta corretta": "Tizio, che, a seguito di acquisti, è venuto a disporre di diritti di voto in misura pari al 35% dei medesimi",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "91",
+    "domanda": "Ai sensi del comma 1 dell'articolo 106 del decreto legislativo n. 58/1998 (Testo Unico della Finanza), un’offerta pubblica di acquisto rivolta a tutti i possessori di titoli sulla totalità dei titoli ammessi alla negoziazione in un mercato regolamentato in loro possesso, è promossa da chiunque, a seguito di:",
+    "risposte": [
+      "acquisti, venga a detenere una partecipazione superiore alla soglia del 30%",
+      "acquisti, venga a detenere una partecipazione superiore alla soglia del 10%",
+      "acquisti, venga a detenere una partecipazione superiore alla soglia del 5%",
+      "acquisti, venga detenere una partecipazione superiore alla soglia del 20%"
+    ],
+    "risposta corretta": "acquisti, venga a detenere una partecipazione superiore alla soglia del 30%",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "92",
+    "domanda": "Una società che intende promuovere una offerta pubblica di acquisto o di scambio concorrente è tenuta, ai sensi dell’art. 44 della delibera Consob 11971/1999 (c.d. Regolamento emittenti), a:",
+    "risposte": [
+      "pubblicarla fino a cinque giorni prima della data prevista per la chiusura del periodo di adesione, anche prorogato, dell'offerta precedente",
+      "promuoverla per un corrispettivo globale almeno pari a quello dell'offerta precedente, se non comporta l'eliminazione di una condizione di efficacia",
+      "allineare il periodo di adesione a quello dell'offerta precedente, anche in caso di rilanci degli offerenti originari",
+      "rispettare l'irrevocabilità delle adesioni alle altre offerte"
+    ],
+    "risposta corretta": "pubblicarla fino a cinque giorni prima della data prevista per la chiusura del periodo di adesione, anche prorogato, dell'offerta precedente",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "93",
+    "domanda": "Ai sensi dell'art. 43 della delibera Consob 11971/1999 (c.d. Regolamento emittenti), le modifiche ad un’offerta pubblica di acquisto:",
+    "risposte": [
+      "sono ammesse fino al giorno antecedente alla data prevista per la chiusura del periodo di adesione",
+      "sono ammesse fino a due ore prima della chiusura del periodo di adesione",
+      "possono contenere una riduzione del quantitativo richiesto",
+      "non sono mai ammesse"
+    ],
+    "risposta corretta": "sono ammesse fino al giorno antecedente alla data prevista per la chiusura del periodo di adesione",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "94",
+    "domanda": "Secondo il comma 3 dell'art. 100 del d. lgs. n. 58/1998 (TUF), le disposizioni in materia di offerta al pubblico di sottoscrizione e di vendita non si applicano alle offerte aventi ad oggetto prodotti finanziari diversi dai titoli di cui all’art. 93-bis, comma 1, lett. c), dello stesso TUF, e:",
+    "risposte": [
+      "rivolte ai soli investitori qualificati, come definiti dalla Consob con regolamento in base ai criteri fissati dalle disposizioni comunitarie",
+      "rivolte a un numero di soggetti non inferiore a quello indicato da Consob con regolamento",
+      "aventi ad oggetto strumenti del mercato monetario emessi da assicurazioni con una scadenza inferiore a dodici mesi",
+      "rivolte ai soli investitori qualificati, come definiti da Borsa Italiana con regolamento in base ai criteri fissati dalle disposizioni comunitarie"
+    ],
+    "risposta corretta": "rivolte ai soli investitori qualificati, come definiti dalla Consob con regolamento in base ai criteri fissati dalle disposizioni comunitarie",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "95",
+    "domanda": "Ai sensi del comma 1-bis dell'articolo 106 del decreto legislativo n. 58/1998 (Testo Unico della Finanza), l'offerta di acquisto totalitaria deve essere promossa da chi, a seguito di acquisti, venga a detenere una partecipazione del 27% di una società che non può essere considerata una PMI?",
+    "risposte": [
+      "Sì, in assenza di altro socio che detenga una partecipazione più elevata",
+      "No, mai",
+      "Sì, in ogni caso",
+      "No, perché in questo caso la soglia per l’obbligo di offerta di acquisto totalitaria è pari al 35%"
+    ],
+    "risposta corretta": "Sì, in assenza di altro socio che detenga una partecipazione più elevata",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "96",
+    "domanda": "Ai sensi del comma 3 dell'art. 94-bis del d. lgs. n. 58/1998 (TUF), in tema di offerte al pubblico di prodotti finanziari diversi dai titoli e dalle quote o azioni di Oicr aperti, la mancata decisione della Consob nei termini previsti circa l’approvazione di un prospetto costituisce approvazione dello stesso?",
+    "risposte": [
+      "No, in nessun caso",
+      "Sì, se il prospetto è già stato approvato da Borsa Italiana Spa",
+      "No, a meno che il prospetto non sia stato approvato dall’Autorità europea degli strumenti finanziari e dei mercati",
+      "Sì, se il prospetto è già stato approvato dalla Banca d’Italia"
+    ],
+    "risposta corretta": "No, in nessun caso",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "97",
+    "domanda": "Il comma 3 dell'articolo 101 del d. lgs. n. 58/1998 (TUF), in materia di offerta al pubblico di sottoscrizione e di vendita, dispone che la pubblicità relativa a un'offerta al pubblico di prodotti finanziari diversi dai titoli di cui all’art.93-bis dello stesso TUF è effettuata secondo i criteri stabiliti:",
+    "risposte": [
+      "dalla Consob con regolamento",
+      "dal Ministero dell'economia e delle finanze mediante circolare",
+      "da Borsa Italiana con regolamento",
+      "dalla Banca d'Italia mediante circolare"
+    ],
+    "risposta corretta": "dalla Consob con regolamento",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "98",
+    "domanda": "Secondo il comma 1, lett. c), dell'art. 99 del d. lgs. n. 58/1998 (TUF), nel caso in cui abbia il fondato sospetto che potrebbero essere violate le disposizioni in materia di offerte al pubblico di sottoscrizione e di vendita, la Consob può:",
+    "risposte": [
+      "vietare l’offerta",
+      "informare senza indugio la Banca d’Italia e il Ministero dell’economia e delle finanze",
+      "sospendere per un periodo non inferiore a novanta giorni lavorativi consecutivi per ciascuna volta, l’offerta avente ad oggetto prodotti finanziari diversi dai titoli di cui all’art. 93-bis, comma 1, lett. c) dello stesso TUF",
+      "sospendere per un periodo non superiore a trenta giorni lavorativi consecutivi per ciascuna volta, l’offerta avente ad oggetto azioni di società"
+    ],
+    "risposta corretta": "vietare l’offerta",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "99",
+    "domanda": "La società Alfa promuove un'offerta pubblica di acquisto sulle azioni della società Beta quotata sul Mercato Telematico Azionario di Borsa Italiana. Entrambe le società sono organizzate secondo il modello monistico. Ai sensi dell'art. 103 del decreto legislativo n. 58/1998 (Testo Unico della Finanza), chi è tenuto a diffondere un comunicato contenente ogni dato utile per l'apprezzamento dell'offerta e la propria valutazione sulla medesima?",
+    "risposte": [
+      "Il consiglio di amministrazione della società Beta",
+      "Il consiglio di amministrazione della società Alfa",
+      "Il consiglio di amministrazione di Borsa Italiana",
+      "La Consob"
+    ],
+    "risposta corretta": "Il consiglio di amministrazione della società Beta",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "100",
+    "domanda": "Ai sensi dell’art. 40 della delibera Consob 11971/1999 (c.d. Regolamento emittenti), il periodo di adesione ad un’offerta pubblica è concordato:",
+    "risposte": [
+      "con il gestore del mercato o, nel caso di prodotti finanziari non ammessi alle negoziazioni in un mercato regolamentato, con la Consob",
+      "con il gestore del mercato o, nel caso di prodotti finanziari non ammessi alle negoziazioni in un mercato regolamentato, con la Banca d’Italia",
+      "con la Consob e con il Ministero dell’Economia e delle Finanze",
+      "con la Consob e con la Banca d’Italia"
+    ],
+    "risposta corretta": "con il gestore del mercato o, nel caso di prodotti finanziari non ammessi alle negoziazioni in un mercato regolamentato, con la Consob",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "101",
+    "domanda": "Ai sensi dell’art. 9 della delibera Consob 11971/1999 (c.d. Regolamento emittenti), il prospetto di offerta ed il supplemento, entrambi approvati, sono depositati presso:",
+    "risposte": [
+      "la Consob",
+      "il luogo indicato nello statuto dell’emittente",
+      "la Banca d’Italia",
+      "Borsa Italiana"
+    ],
+    "risposta corretta": "la Consob",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "102",
+    "domanda": "L'articolo 111 del decreto legislativo n. 58/1998 (Testo Unico della Finanza) attribuisce all’offerente, che venga a detenere, a seguito di offerta pubblica totalitaria, una partecipazione almeno pari al 95% del capitale rappresentato da titoli in una società italiana quotata, il diritto di acquistare:",
+    "risposte": [
+      "i titoli residui entro tre mesi dalla scadenza del termine per l’accettazione dell’offerta, se ha dichiarato nel documento d'offerta l'intenzione di avvalersi di tale diritto",
+      "i titoli residui entro nove mesi dalla scadenza del termine per l’accettazione dell’offerta, anche se non ha dichiarato nel documento d’offerta l’intenzione di avvalersi di tale diritto",
+      "fino al 30% dei titoli residui ad un prezzo pari a quello dell’offerta pubblica totalitaria, entro sei mesi dalla scadenza del termine per l’accettazione dell’offerta",
+      "fino al 50% dei titoli residui entro sei mesi dalla scadenza del termine per l’accettazione dell’offerta, previa autorizzazione del Ministero dell’economia e delle finanze"
+    ],
+    "risposta corretta": "i titoli residui entro tre mesi dalla scadenza del termine per l’accettazione dell’offerta, se ha dichiarato nel documento d'offerta l'intenzione di avvalersi di tale diritto",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "103",
+    "domanda": "Secondo il comma 1 dell'art. 99 del d. lgs. n. 58/1998 (TUF), in caso di fondato sospetto di violazione delle disposizioni in materia di offerta al pubblico di sottoscrizione e di vendita, la Consob può sospendere in via cautelare l'offerta avente ad oggetto azioni di società?",
+    "risposte": [
+      "Sì, per un periodo non superiore a dieci giorni lavorativi consecutivi per ciascuna volta",
+      "Sì, per un periodo non inferiore a trenta giorni lavorativi consecutivi, per ciascuna volta",
+      "No, è la Banca d’Italia a poterlo fare, d’intesa con Borsa Italiana Spa",
+      "Sì, per un periodo non superiore a sessanta giorni lavorativi consecutivi per ciascuna volta"
+    ],
+    "risposta corretta": "Sì, per un periodo non superiore a dieci giorni lavorativi consecutivi per ciascuna volta",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di sottoscrizione e di vendita"
+  },
+  {
+    "id": "104",
+    "domanda": "In base a quanto previsto dal comma 1 dell'articolo 106 del decreto legislativo n. 58/1998 (Testo Unico della Finanza), chiunque, a seguito di acquisti, venga a detenere una partecipazione superiore alla soglia del 30% in una società italiana con titoli ammessi alla negoziazione in un mercato regolamentato italiano, promuove un'offerta pubblica di acquisto rivolta a tutti i possessori di titoli:",
+    "risposte": [
+      "sulla totalità dei titoli ammessi alla negoziazione in un mercato regolamentato in loro possesso",
+      "sulla totalità dei titoli emessi dalla società, compresi quelli negoziati in un mercato non regolamentato",
+      "azionari, obbligazionari e derivati emessi dalla società",
+      "ai possessori di titoli che detengono una partecipazione qualificata"
+    ],
+    "risposta corretta": "sulla totalità dei titoli ammessi alla negoziazione in un mercato regolamentato in loro possesso",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "105",
+    "domanda": "Ai sensi dell'articolo 104-bis del d. lgs. n. 58/1998 (Testo Unico della Finanza), in materia di offerte pubbliche di acquisto o di scambio, gli statuti delle società italiane quotate possono prevedere che, nel caso di un'offerta pubblica di acquisto che abbia ad oggetto i titoli da loro emessi, non abbiano effetto, nei confronti dell'offerente, le limitazioni al trasferimento di titoli previste nello stesso statuto?",
+    "risposte": [
+      "Sì, se si tratta di società diverse dalle società cooperative, gli statuti possono prevedere che tali limitazioni non abbiano effetto nel periodo di adesione all'offerta",
+      "No, salvo autorizzazione della Autorità garante della concorrenza e del mercato",
+      "Sì, gli statuti possono prevedere che tali limitazioni non abbiano effetto, anche oltre il termine del periodo di adesione all’offerta",
+      "No, gli statuti non possono in nessun caso contenere una tale previsione"
+    ],
+    "risposta corretta": "Sì, se si tratta di società diverse dalle società cooperative, gli statuti possono prevedere che tali limitazioni non abbiano effetto nel periodo di adesione all'offerta",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  },
+  {
+    "id": "106",
+    "domanda": "In materia di trasparenza nelle offerte pubbliche di acquisto e di scambio, l’art. 41 della delibera Consob 11971/1999 (c.d. Regolamento emittenti) prevede che fino alla data indicata per il pagamento del corrispettivo:",
+    "risposte": [
+      "nelle offerte su strumenti finanziari quotati, l'offerente e i soggetti incaricati della raccolta delle adesioni diffondono giornalmente i dati sulle adesioni, tramite la società di gestione del mercato",
+      "i soggetti interessati non possono in alcun caso pubblicare messaggi aventi carattere promozionale",
+      "le dichiarazioni riguardanti l'offerta possono essere rilasciate solo a organi di stampa di adeguata diffusione",
+      "i soggetti interessati comunicano ogni due settimane alla CONSOB le operazioni di acquisto e vendita su strumenti finanziari oggetto d'offerta"
+    ],
+    "risposta corretta": "nelle offerte su strumenti finanziari quotati, l'offerente e i soggetti incaricati della raccolta delle adesioni diffondono giornalmente i dati sulle adesioni, tramite la società di gestione del mercato",
+    "livello": "2",
+    "categoria": "Appello al pubblico risparmio",
+    "sub-contenuto": "Offerta al pubblico di acquisto o di scambio"
+  }
+]

@@ -1,6 +1,7 @@
 import { AnswerButton } from "@/components/answer-button";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { BookOpenText, Lightbulb } from "lucide-react";
 import type { Question } from "@/types/question";
 export function QuestionCard({
   question,
@@ -54,11 +55,27 @@ export function QuestionCard({
               ? "Corretto!"
               : `Errato. Risposta corretta: ${correct?.id}`}
           </p>
+        </div>
+      ) : null}
+      {confirmed && (question.explanation || question.reference) ? (
+        <div className="space-y-3 rounded-[var(--radius-control)] border border-[var(--border)] bg-[var(--surface-muted)] p-4">
           {question.explanation ? (
-            <p className="mt-2 text-sm">{question.explanation}</p>
+            <div className="flex gap-3">
+              <Lightbulb className="mt-0.5 h-5 w-5 shrink-0 text-[var(--warning)]" aria-hidden="true" />
+              <div>
+                <p className="text-sm font-bold">Spiegazione</p>
+                <p className="mt-1 text-sm leading-relaxed text-[var(--muted)]">{question.explanation}</p>
+              </div>
+            </div>
           ) : null}
           {question.reference ? (
-            <p className="mt-2 text-xs font-medium">{question.reference}</p>
+            <div className="flex gap-3 border-t border-[var(--border)] pt-3">
+              <BookOpenText className="mt-0.5 h-5 w-5 shrink-0 text-[var(--primary)]" aria-hidden="true" />
+              <div>
+                <p className="text-sm font-bold">Riferimento normativo</p>
+                <p className="mt-1 text-sm leading-relaxed text-[var(--muted)]">{question.reference}</p>
+              </div>
+            </div>
           ) : null}
         </div>
       ) : null}

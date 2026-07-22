@@ -9,6 +9,8 @@ type SourceQuestion = {
   livello: string;
   categoria: string;
   "sub-contenuto": string;
+  explanation?: string;
+  reference?: string;
 };
 
 const answerIds = ["A", "B", "C", "D"];
@@ -43,6 +45,8 @@ const allQuestions: Question[] = (questions as SourceQuestion[]).map(
     subtopic: question["sub-contenuto"],
     difficulty: Number(question.livello),
     question: question.domanda,
+    explanation: question.explanation,
+    reference: question.reference,
     answers: question.risposte.map((text, index) => ({
       id: answerIds[index],
       text,
