@@ -7,6 +7,7 @@ import { QuizProgress } from "@/components/quiz-progress";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import type { Question } from "@/types/question";
+import type { QuizAnswer } from "@/types/quiz";
 
 export function QuizClient({
   questions,
@@ -22,6 +23,7 @@ export function QuizClient({
   const [answer, setAnswer] = useState<string>();
   const [confirmed, setConfirmed] = useState(false);
   const [correct, setCorrect] = useState(0);
+  const [answers, setAnswers] = useState<QuizAnswer[]>([]);
   const [startedAt] = useState(() => Date.now());
   const [pausedAt, setPausedAt] = useState<number>();
   const [pausedDuration, setPausedDuration] = useState(0);
@@ -40,9 +42,16 @@ export function QuizClient({
   }
 
   function confirm() {
+    if (!answer) return;
+    const isCorrect = Boolean(
+      question.answers.find((item) => item.id === answer)?.correct,
+    );
     setConfirmed(true);
-    if (question.answers.find((item) => item.id === answer)?.correct)
-      setCorrect((value) => value + 1);
+    if (isCorrect) setCorrect((value) => value + 1);
+    setAnswers((currentAnswers) => [
+      ...currentAnswers,
+      { questionId: question.id, selectedAnswer: answer, correct: isCorrect },
+    ]);
   }
   function next() {
     if (index + 1 >= total) {
@@ -52,11 +61,14 @@ export function QuizClient({
       sessionStorage.setItem(
         "ocf-quiz-result",
         JSON.stringify({
-          totalQuestions: total,
-          correctAnswers: correct,
-          wrongAnswers: total - correct,
-          score: total ? Math.round((correct / total) * 100) : 0,
-          durationSeconds,
+          result: {
+            totalQuestions: total,
+            correctAnswers: correct,
+            wrongAnswers: total - correct,
+            score: total ? Math.round((correct / total) * 100) : 0,
+            durationSeconds,
+          },
+          answers,
         }),
       );
       router.push("/result");

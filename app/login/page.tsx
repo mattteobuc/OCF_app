@@ -2,7 +2,8 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import { supabase } from "@/lib/supabase";
+import { isSupabaseConfigured } from "@/lib/auth-service";
+import { createClient } from "@/lib/supabase/client";
 
 type AuthMode = "login" | "register";
 
@@ -22,10 +23,11 @@ export default function LoginPage() {
 
   async function submit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    if (!supabase) {
+    if (!isSupabaseConfigured()) {
       router.push("/dashboard");
       return;
     }
+    const supabase = createClient();
     setLoading(true);
     setMessage("");
 
@@ -35,7 +37,7 @@ export default function LoginPage() {
         password,
         options: {
           data: { full_name: fullName.trim() || null },
-          emailRedirectTo: `${location.origin}/dashboard`,
+          emailRedirectTo: `${location.origin}/auth/callback`,
         },
       });
       if (error) {
@@ -62,14 +64,15 @@ export default function LoginPage() {
   }
 
   async function sendMagicLink() {
-    if (!supabase) {
+    if (!isSupabaseConfigured()) {
       router.push("/dashboard");
       return;
     }
+    const supabase = createClient();
     setLoading(true);
     const { error } = await supabase.auth.signInWithOtp({
       email,
-      options: { emailRedirectTo: `${location.origin}/dashboard` },
+      options: { emailRedirectTo: `${location.origin}/auth/callback` },
     });
     setMessage(error ? error.message : "Controlla la tua email per accedere.");
     setLoading(false);

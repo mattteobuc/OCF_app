@@ -2,22 +2,20 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { UserRound } from "lucide-react";
-import { supabase } from "@/lib/supabase";
+import { getCurrentUser, signOut } from "@/lib/auth-service";
 
 export function Navbar({ quizMode = false }: { quizMode?: boolean }) {
   const [email, setEmail] = useState<string>();
 
   useEffect(() => {
-    if (!supabase) return;
-    supabase.auth.getUser().then(({ data }) => setEmail(data.user?.email));
-    const { data } = supabase.auth.onAuthStateChange((_event, session) => {
-      setEmail(session?.user?.email);
-    });
-    return () => data.subscription.unsubscribe();
+    getCurrentUser()
+      .then((user) => setEmail(user?.email))
+      .catch(() => setEmail(undefined));
   }, []);
 
   async function logout() {
-    await supabase?.auth.signOut();
+    await signOut();
+    setEmail(undefined);
   }
 
   return (

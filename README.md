@@ -20,12 +20,12 @@ Apri `http://localhost:3000`.
 
 1. Crea un progetto Supabase e abilita il provider Email in Authentication. Sono disponibili registrazione/accesso con email e password e magic link.
 2. In **Authentication → URL Configuration**, aggiungi `http://localhost:3000/dashboard` e l'URL di produzione come redirect URL.
-3. Esegui il file `supabase/migrations/20260721000000_initial_schema.sql` nello SQL Editor (oppure con Supabase CLI).
+3. Esegui il file `supabase/migrations/20260723000000_initial_schema.sql` nello SQL Editor (oppure con Supabase CLI).
 4. Copia Project URL e anon key in `.env.local`:
 
 ```env
 NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
+NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=sb_publishable_your-key
 ```
 
 Senza variabili Supabase l'app resta navigabile in modalità demo; registrazione, login e salvataggio dei risultati non vengono eseguiti.
@@ -36,7 +36,7 @@ La pagina `/login` permette di:
 - accedere con email e password;
 - richiedere un magic link come alternativa al login con password.
 
-Se la conferma email è attiva nel progetto Supabase, dopo la registrazione l'utente deve aprire il link ricevuto prima di poter accedere. Il trigger `handle_new_user` copia il nome inserito nel record `profiles`.
+Se la conferma email è attiva nel progetto Supabase, dopo la registrazione l'utente deve aprire il link ricevuto prima di poter accedere. Il callback `/auth/callback` scambia il codice ricevuto con una sessione sicura; il trigger `handle_new_user` crea il record `profiles`.
 
 ### Dati persistenti
 
@@ -44,9 +44,9 @@ La migrazione crea tre tabelle protette da Row Level Security:
 
 - `profiles`: creato automaticamente dal trigger di Supabase quando nasce un utente;
 - `quiz_history`: salva punteggio, domande, risposte corrette/errate, durata e data di ogni quiz autenticato;
-- `user_answers`: disponibile per la successiva persistenza del dettaglio delle singole risposte.
+- `user_answers`: salva il dettaglio delle risposte selezionate dall'utente.
 
-Dopo il login, il risultato viene salvato automaticamente quando si apre la pagina del riepilogo. La pagina Profilo legge lo storico dell'utente autenticato e calcola quiz completati, domande risposte, accuratezza e tempo medio. Le policy RLS impediscono a un utente di leggere o scrivere dati appartenenti ad altri utenti.
+Dopo il login, il risultato e le risposte vengono salvati automaticamente quando si apre la pagina del riepilogo. La pagina Profilo legge lo storico dell'utente autenticato e calcola quiz completati, domande risposte, accuratezza e tempo medio. Le policy RLS impediscono a un utente di leggere o scrivere dati appartenenti ad altri utenti.
 
 ## Domande locali
 

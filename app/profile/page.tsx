@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { PageShell } from "@/components/page-shell";
 import { ScoreCard } from "@/components/score-card";
 import { EmptyState } from "@/components/empty-state";
-import { getQuizStats, type QuizStats } from "@/lib/user-data";
+import { getQuizStats, type QuizStats } from "@/lib/quiz-service";
 
 export default function ProfilePage() {
   const [stats, setStats] = useState<QuizStats | null>();
