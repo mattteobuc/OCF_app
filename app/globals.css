@@ -1,5 +1,5 @@
-@import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
 
 :root {
   --background: #f8fafc;
@@ -13,27 +13,34 @@
   --primary-soft: #eff6ff;
   --success: #22c55e;
   --success-soft: #f0fdf4;
+  --success-foreground: #166534;
   --error: #ef4444;
   --error-soft: #fef2f2;
+  --error-foreground: #991b1b;
   --warning: #f59e0b;
   --radius-card: 18px;
   --radius-control: 12px;
-  --shadow-card: 0 1px 2px rgb(15 23 42 / 0.04), 0 8px 24px rgb(15 23 42 / 0.04);
-  --shadow-hover: 0 12px 30px rgb(37 99 235 / 0.10);
+  --shadow-card:
+    0 1px 2px rgb(15 23 42 / 0.04), 0 8px 24px rgb(15 23 42 / 0.04);
+  --shadow-hover: 0 12px 30px rgb(37 99 235 / 0.1);
 }
 
-body:has(#theme-toggle:checked) {
-  --background: #0f172a;
-  --surface: #172033;
-  --surface-muted: #1e293b;
-  --foreground: #f8fafc;
-  --muted: #94a3b8;
-  --border: #334155;
-  --primary-soft: #172554;
-  --success-soft: #052e16;
-  --error-soft: #450a0a;
-  --shadow-card: 0 1px 2px rgb(0 0 0 / 0.25), 0 8px 24px rgb(0 0 0 / 0.18);
-  --shadow-hover: 0 12px 30px rgb(37 99 235 / 0.18);
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0f172a;
+    --surface: #172033;
+    --surface-muted: #1e293b;
+    --foreground: #f8fafc;
+    --muted: #94a3b8;
+    --border: #334155;
+    --primary-soft: #172554;
+    --success-soft: #052e16;
+    --success-foreground: #bbf7d0;
+    --error-soft: #450a0a;
+    --error-foreground: #fecaca;
+    --shadow-card: 0 1px 2px rgb(0 0 0 / 0.25), 0 8px 24px rgb(0 0 0 / 0.18);
+    --shadow-hover: 0 12px 30px rgb(37 99 235 / 0.18);
+  }
 }
 
 * {
@@ -42,13 +49,16 @@ body:has(#theme-toggle:checked) {
 
 html {
   background: var(--background);
+  color-scheme: light dark;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: "Inter", sans-serif;
-  transition: background-color 200ms ease, color 200ms ease;
+  transition:
+    background-color 200ms ease,
+    color 200ms ease;
 }
 
 button,
@@ -65,31 +75,4 @@ input {
 ::selection {
   background: #bfdbfe;
   color: #172554;
-}
-
-.theme-toggle {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.25rem;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  padding: 0.4rem;
-  color: var(--muted);
-  cursor: pointer;
-}
-
-.theme-toggle input {
-  position: absolute;
-  opacity: 0;
-  pointer-events: none;
-}
-
-.theme-toggle svg:last-of-type,
-.theme-toggle:has(input:checked) svg:first-of-type {
-  color: var(--muted);
-}
-
-.theme-toggle svg:first-of-type,
-.theme-toggle:has(input:checked) svg:last-of-type {
-  color: var(--warning);
 }

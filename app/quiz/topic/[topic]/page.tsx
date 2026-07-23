@@ -11,8 +11,12 @@ export default async function TopicQuizPage({
 }) {
   const { topic } = await params;
   return (
-    <PageShell>
-      <QuizClient questions={getQuestionsByTopic(decodeURIComponent(topic))} />
+    <PageShell quizMode>
+      <QuizClient
+        questions={getQuestionsByTopic(decodeURIComponent(topic))}
+        exitHref="/dashboard#argomenti"
+        exitLabel="Torna agli argomenti"
+      />
     </PageShell>
   );
 }

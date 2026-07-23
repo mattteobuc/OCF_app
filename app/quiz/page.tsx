@@ -6,8 +6,12 @@ export const dynamic = "force-dynamic";
 
 export default function QuizPage() {
   return (
-    <PageShell>
-      <QuizClient questions={getRandomQuestions(5)} />
+    <PageShell quizMode>
+      <QuizClient
+        questions={getRandomQuestions(5)}
+        exitHref="/dashboard"
+        exitLabel="Torna alla dashboard"
+      />
     </PageShell>
   );
 }
