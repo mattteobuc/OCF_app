@@ -48,6 +48,8 @@ La migrazione crea tre tabelle protette da Row Level Security:
 
 Dopo il login, il risultato e le risposte vengono salvati automaticamente quando si apre la pagina del riepilogo. La pagina Profilo legge lo storico dell'utente autenticato e calcola quiz completati, domande risposte, accuratezza e tempo medio. Le policy RLS impediscono a un utente di leggere o scrivere dati appartenenti ad altri utenti.
 
+Per abilitare la ripresa dei quiz in sospeso, esegui anche `supabase/migrations/20260723000001_active_quiz_sessions.sql`. Lo stato viene salvato subito nel browser e sincronizzato con Supabase per gli utenti autenticati.
+
 ## Domande locali
 
 Il formato e gli esempi sono in `data/questions.json`. Tutte le schermate usano esclusivamente `lib/question-service.ts` per recuperarle, evitando dipendenze dall'origine dati.

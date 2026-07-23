@@ -2,6 +2,7 @@ import Link from "next/link";
 import { PageShell } from "@/components/page-shell";
 import { Card } from "@/components/ui/card";
 import { TopicCard } from "@/components/topic-card";
+import { ContinueQuizCard } from "@/components/continue-quiz-card";
 import { ArrowRight, BarChart3, Play, Sparkles } from "lucide-react";
 import { getAllQuestions, getTopics } from "@/lib/question-service";
 
@@ -19,6 +20,7 @@ export default function DashboardPage() {
         <p className="mt-3 max-w-xl text-[var(--muted)]">
           Scegli una simulazione rapida o concentrati su un argomento specifico.
         </p>
+        <ContinueQuizCard />
         <div className="mt-8 grid gap-4 sm:grid-cols-2">
           <Link href="/quiz">
             <Card className="group h-full border-blue-700 bg-blue-700 text-white shadow-[0_12px_30px_rgb(37_99_235_/_0.18)] hover:-translate-y-1 hover:bg-blue-700">

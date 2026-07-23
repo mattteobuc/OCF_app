@@ -13,3 +13,12 @@ export type QuizAnswer = {
 };
 
 export type QuizSession = { result: QuizResult; answers: QuizAnswer[] };
+
+export type ActiveQuiz = {
+  questionIds: number[];
+  answerOrders: string[][];
+  currentIndex: number;
+  correctAnswers: number;
+  answers: QuizAnswer[];
+  elapsedSeconds: number;
+};

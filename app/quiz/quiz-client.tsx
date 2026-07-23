@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { ArrowLeft, Pause, Play, X } from "lucide-react";
 import { QuestionCard } from "@/components/question-card";
@@ -7,37 +7,74 @@ import { QuizProgress } from "@/components/quiz-progress";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import type { Question } from "@/types/question";
-import type { QuizAnswer } from "@/types/quiz";
+import type { ActiveQuiz, QuizAnswer } from "@/types/quiz";
+import { clearActiveQuiz, saveActiveQuiz } from "@/lib/active-quiz-service";
 
 export function QuizClient({
   questions,
   exitHref,
   exitLabel,
+  initialQuiz,
 }: {
   questions: Question[];
   exitHref: string;
   exitLabel: string;
+  initialQuiz?: ActiveQuiz;
 }) {
   const router = useRouter();
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(initialQuiz?.currentIndex ?? 0);
   const [answer, setAnswer] = useState<string>();
   const [confirmed, setConfirmed] = useState(false);
-  const [correct, setCorrect] = useState(0);
-  const [answers, setAnswers] = useState<QuizAnswer[]>([]);
-  const [startedAt] = useState(() => Date.now());
+  const [correct, setCorrect] = useState(initialQuiz?.correctAnswers ?? 0);
+  const [answers, setAnswers] = useState<QuizAnswer[]>(
+    initialQuiz?.answers ?? [],
+  );
+  const [activeStartedAt, setActiveStartedAt] = useState(() => Date.now());
+  const [elapsedSeconds, setElapsedSeconds] = useState(
+    initialQuiz?.elapsedSeconds ?? 0,
+  );
   const [pausedAt, setPausedAt] = useState<number>();
-  const [pausedDuration, setPausedDuration] = useState(0);
   const [exitDialogOpen, setExitDialogOpen] = useState(false);
   const question = questions[index];
   const total = questions.length;
 
+  function getElapsedSeconds() {
+    return elapsedSeconds + Math.floor((Date.now() - activeStartedAt) / 1000);
+  }
+
+  function persistProgress(
+    nextIndex = index,
+    nextCorrect = correct,
+    nextAnswers = answers,
+  ) {
+    void saveActiveQuiz({
+      questionIds: questions.map((item) => item.id),
+      answerOrders: questions.map((item) =>
+        item.answers.map((itemAnswer) => itemAnswer.text),
+      ),
+      currentIndex: nextIndex,
+      correctAnswers: nextCorrect,
+      answers: nextAnswers,
+      elapsedSeconds: getElapsedSeconds(),
+    }).catch(() => undefined);
+  }
+
+  useEffect(() => {
+    if (!initialQuiz) return;
+    persistProgress();
+    // The session is saved after state changes; questions are immutable for the current quiz.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [index, correct, answers]);
+
   function resume() {
-    if (pausedAt)
-      setPausedDuration((duration) => duration + Date.now() - pausedAt);
+    if (pausedAt) {
+      setActiveStartedAt(Date.now());
+    }
     setPausedAt(undefined);
   }
 
   function exitQuiz() {
+    persistProgress();
     router.push(exitHref);
   }
 
@@ -47,17 +84,18 @@ export function QuizClient({
       question.answers.find((item) => item.id === answer)?.correct,
     );
     setConfirmed(true);
-    if (isCorrect) setCorrect((value) => value + 1);
-    setAnswers((currentAnswers) => [
-      ...currentAnswers,
+    const nextCorrect = correct + Number(isCorrect);
+    const nextAnswers = [
+      ...answers,
       { questionId: question.id, selectedAnswer: answer, correct: isCorrect },
-    ]);
+    ];
+    if (isCorrect) setCorrect(nextCorrect);
+    setAnswers(nextAnswers);
+    persistProgress(index, nextCorrect, nextAnswers);
   }
   function next() {
     if (index + 1 >= total) {
-      const durationSeconds = Math.round(
-        (Date.now() - startedAt - pausedDuration) / 1000,
-      );
+      const durationSeconds = getElapsedSeconds();
       sessionStorage.setItem(
         "ocf-quiz-result",
         JSON.stringify({
@@ -71,12 +109,15 @@ export function QuizClient({
           answers,
         }),
       );
+      void clearActiveQuiz().catch(() => undefined);
       router.push("/result");
       return;
     }
-    setIndex((value) => value + 1);
+    const nextIndex = index + 1;
+    setIndex(nextIndex);
     setAnswer(undefined);
     setConfirmed(false);
+    persistProgress(nextIndex);
   }
   if (!question)
     return (
@@ -102,7 +143,11 @@ export function QuizClient({
         </button>
         <button
           type="button"
-          onClick={() => setPausedAt(Date.now())}
+          onClick={() => {
+            persistProgress();
+            setElapsedSeconds(getElapsedSeconds());
+            setPausedAt(Date.now());
+          }}
           className="inline-flex items-center gap-2 rounded-lg px-2 py-2 text-sm font-semibold text-[var(--muted)] transition hover:bg-[var(--surface-muted)] hover:text-[var(--foreground)]"
         >
           <Pause className="h-4 w-4" aria-hidden="true" />
@@ -166,7 +211,8 @@ export function QuizClient({
                   Uscire dal quiz?
                 </h2>
                 <p className="mt-2 text-sm text-[var(--muted)]">
-                  I progressi di questa sessione non verranno salvati.
+                  Salveremo il tuo avanzamento: potrai riprendere il quiz dalla
+                  dashboard.
                 </p>
               </div>
               <X
