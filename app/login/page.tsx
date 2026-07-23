@@ -1,9 +1,12 @@
 "use client";
-import { useState } from "react";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import { isSupabaseConfigured } from "@/lib/auth-service";
+import { getAuthErrorMessage, isSupabaseConfigured } from "@/lib/auth-service";
 import { createClient } from "@/lib/supabase/client";
+import { saveQuizSession } from "@/lib/quiz-service";
+import type { QuizSession } from "@/types/quiz";
 
 type AuthMode = "login" | "register";
 
@@ -14,7 +17,34 @@ export default function LoginPage() {
   const [fullName, setFullName] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
+  const [next, setNext] = useState("/dashboard");
   const router = useRouter();
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const requestedPath = params.get("next");
+    if (requestedPath?.startsWith("/")) setNext(requestedPath);
+    if (params.get("error") === "auth_callback")
+      setMessage("Il link non è più valido. Richiedine uno nuovo.");
+  }, []);
+
+  async function completeAccess() {
+    const pendingResult = sessionStorage.getItem("ocf-quiz-result");
+    if (pendingResult) {
+      const parsed = JSON.parse(pendingResult) as QuizSession;
+      try {
+        const { saved } = await saveQuizSession(parsed.result, parsed.answers);
+        if (saved)
+          sessionStorage.setItem(
+            `ocf-quiz-result-saved:${pendingResult}`,
+            "true",
+          );
+      } catch {
+        // The login succeeds even if the optional demo-result migration fails.
+      }
+    }
+    router.push(next);
+  }
 
   function switchMode(nextMode: AuthMode) {
     setMode(nextMode);
@@ -24,7 +54,7 @@ export default function LoginPage() {
   async function submit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     if (!isSupabaseConfigured()) {
-      router.push("/dashboard");
+      router.push(next);
       return;
     }
     const supabase = createClient();
@@ -41,9 +71,9 @@ export default function LoginPage() {
         },
       });
       if (error) {
-        setMessage(error.message);
+        setMessage(getAuthErrorMessage(error.message));
       } else if (data.session) {
-        router.push("/dashboard");
+        await completeAccess();
       } else {
         setMessage(
           "Registrazione completata. Controlla la tua email per confermare l'account.",
@@ -55,9 +85,9 @@ export default function LoginPage() {
         password,
       });
       if (error) {
-        setMessage("Email o password non valide.");
+        setMessage(getAuthErrorMessage(error.message));
       } else {
-        router.push("/dashboard");
+        await completeAccess();
       }
     }
     setLoading(false);
@@ -65,7 +95,7 @@ export default function LoginPage() {
 
   async function sendMagicLink() {
     if (!isSupabaseConfigured()) {
-      router.push("/dashboard");
+      router.push(next);
       return;
     }
     const supabase = createClient();
@@ -74,7 +104,11 @@ export default function LoginPage() {
       email,
       options: { emailRedirectTo: `${location.origin}/auth/callback` },
     });
-    setMessage(error ? error.message : "Controlla la tua email per accedere.");
+    setMessage(
+      error
+        ? getAuthErrorMessage(error.message)
+        : "Controlla la tua email per accedere.",
+    );
     setLoading(false);
   }
 
@@ -186,6 +220,14 @@ export default function LoginPage() {
         >
           Inviami invece un link di accesso
         </button>
+      ) : null}
+      {mode === "login" ? (
+        <Link
+          href="/forgot-password"
+          className="mt-4 text-sm font-medium text-[var(--muted)] transition hover:text-[var(--foreground)]"
+        >
+          Hai dimenticato la password?
+        </Link>
       ) : null}
       {message && (
         <p className="mt-4 text-sm text-[var(--muted)]" role="status">

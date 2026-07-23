@@ -30,7 +30,28 @@ export async function middleware(request: NextRequest) {
     },
   );
 
-  await supabase.auth.getUser();
+  const { data } = await supabase.auth.getUser();
+  const pathname = request.nextUrl.pathname;
+  const isAuthenticated = Boolean(data.user);
+
+  if (pathname === "/profile" && !isAuthenticated) {
+    const loginUrl = request.nextUrl.clone();
+    loginUrl.pathname = "/login";
+    loginUrl.searchParams.set("next", pathname);
+    return NextResponse.redirect(loginUrl);
+  }
+
+  if (pathname === "/login" && isAuthenticated) {
+    const destination =
+      request.nextUrl.searchParams.get("next") || "/dashboard";
+    const redirectUrl = request.nextUrl.clone();
+    redirectUrl.pathname = destination.startsWith("/")
+      ? destination
+      : "/dashboard";
+    redirectUrl.search = "";
+    return NextResponse.redirect(redirectUrl);
+  }
+
   return response;
 }
 

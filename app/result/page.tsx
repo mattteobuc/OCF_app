@@ -6,8 +6,10 @@ import { Button } from "@/components/ui/button";
 import { ScoreCard } from "@/components/score-card";
 import { saveQuizSession } from "@/lib/quiz-service";
 import type { QuizSession } from "@/types/quiz";
+import { getCurrentUser } from "@/lib/auth-service";
 export default function ResultPage() {
   const [session, setSession] = useState<QuizSession>();
+  const [isGuest, setIsGuest] = useState(false);
   useEffect(() => {
     const saved = sessionStorage.getItem("ocf-quiz-result");
     if (!saved) return;
@@ -20,6 +22,11 @@ export default function ResultPage() {
         if (wasSaved) sessionStorage.setItem(savedKey, "true");
       },
     );
+  }, []);
+  useEffect(() => {
+    getCurrentUser()
+      .then((user) => setIsGuest(!user))
+      .catch(() => setIsGuest(true));
   }, []);
   if (!session)
     return (
@@ -46,6 +53,21 @@ export default function ResultPage() {
         <ScoreCard label="Domande" value={session.result.totalQuestions} />
         <ScoreCard label="Tempo" value={`${session.result.durationSeconds}s`} />
       </div>
+      {isGuest ? (
+        <div className="mt-8 rounded-[var(--radius-card)] border border-[var(--border)] bg-[var(--primary-soft)] p-5">
+          <p className="font-medium">Stai usando la modalità demo.</p>
+          <p className="mt-1 text-sm text-[var(--muted)]">
+            Crea un account per ritrovare i tuoi progressi su qualsiasi
+            dispositivo.
+          </p>
+          <Link
+            href="/login?next=/result"
+            className="mt-4 inline-block text-sm font-medium text-[var(--primary)]"
+          >
+            Accedi o crea un account
+          </Link>
+        </div>
+      ) : null}
       <Link className="mt-7 block" href="/quiz">
         <Button className="w-full">Inizia un altro quiz</Button>
       </Link>

@@ -6,10 +6,17 @@ import { getCurrentUser, signOut } from "@/lib/auth-service";
 
 export function Navbar({ quizMode = false }: { quizMode?: boolean }) {
   const [email, setEmail] = useState<string>();
+  const [isDemo, setIsDemo] = useState(false);
 
   useEffect(() => {
+    if (new URLSearchParams(window.location.search).get("demo") === "1")
+      localStorage.setItem("ocf-demo", "true");
+    setIsDemo(localStorage.getItem("ocf-demo") === "true");
     getCurrentUser()
-      .then((user) => setEmail(user?.email))
+      .then((user) => {
+        setEmail(user?.email);
+        if (user) localStorage.removeItem("ocf-demo");
+      })
       .catch(() => setEmail(undefined));
   }, []);
 
@@ -41,16 +48,22 @@ export function Navbar({ quizMode = false }: { quizMode?: boolean }) {
         )}
         {!quizMode ? (
           <div className="flex items-center gap-2">
-            <Link
-              href="/profile"
-              title={email ?? "Profilo"}
-              className="flex min-h-11 items-center gap-2 rounded-[var(--radius-control)] px-3 text-sm font-medium text-[var(--muted)] transition duration-200 hover:bg-[var(--surface-muted)] hover:text-[var(--foreground)]"
-            >
-              <UserRound className="h-4 w-4" aria-hidden="true" />
-              <span className="hidden max-w-[180px] truncate sm:inline">
-                {email ?? "Profilo"}
+            {email ? (
+              <Link
+                href="/profile"
+                title={email}
+                className="flex min-h-11 items-center gap-2 rounded-[var(--radius-control)] px-3 text-sm font-medium text-[var(--muted)] transition duration-200 hover:bg-[var(--surface-muted)] hover:text-[var(--foreground)]"
+              >
+                <UserRound className="h-4 w-4" aria-hidden="true" />
+                <span className="hidden max-w-[180px] truncate sm:inline">
+                  {email}
+                </span>
+              </Link>
+            ) : isDemo ? (
+              <span className="hidden text-sm text-[var(--muted)] sm:inline">
+                Modalità demo
               </span>
-            </Link>
+            ) : null}
             {email ? (
               <button
                 type="button"
@@ -59,7 +72,25 @@ export function Navbar({ quizMode = false }: { quizMode?: boolean }) {
               >
                 Esci
               </button>
-            ) : null}
+            ) : (
+              <>
+                {isDemo ? (
+                  <Link
+                    href="/"
+                    onClick={() => localStorage.removeItem("ocf-demo")}
+                    className="hidden min-h-11 items-center px-2 text-sm font-medium text-[var(--muted)] sm:inline-flex"
+                  >
+                    Esci demo
+                  </Link>
+                ) : null}
+                <Link
+                  href="/login"
+                  className="min-h-11 rounded-[var(--radius-control)] bg-[var(--primary)] px-4 py-3 text-sm font-medium text-white"
+                >
+                  {isDemo ? "Salva i progressi" : "Accedi"}
+                </Link>
+              </>
+            )}
           </div>
         ) : (
           <span className="text-sm text-[var(--muted)]">Quiz in corso</span>

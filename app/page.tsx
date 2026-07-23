@@ -13,9 +13,17 @@ export default function LandingPage() {
         Un ambiente essenziale per allenarti sull’esame OCF, con domande,
         spiegazioni e progressi sempre al tuo posto.
       </p>
-      <Link href="/login" className="mt-9">
-        <Button>Inizia il tuo percorso</Button>
-      </Link>
+      <div className="mt-9 flex flex-wrap items-center gap-5">
+        <Link href="/login">
+          <Button>Inizia il tuo percorso</Button>
+        </Link>
+        <Link
+          href="/dashboard?demo=1"
+          className="text-sm font-medium text-[var(--primary)]"
+        >
+          Prova senza account
+        </Link>
+      </div>
     </main>
   );
 }
