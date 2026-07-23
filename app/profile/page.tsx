@@ -11,6 +11,7 @@ import {
   updateProfile,
 } from "@/lib/auth-service";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function ProfilePage() {
   const [stats, setStats] = useState<QuizStats | null>();
@@ -20,6 +21,7 @@ export default function ProfilePage() {
   const [email, setEmail] = useState("");
   const [profileMessage, setProfileMessage] = useState("");
   const [saving, setSaving] = useState(false);
+  const [isGuest, setIsGuest] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
@@ -29,12 +31,13 @@ export default function ProfilePage() {
       .finally(() => setLoading(false));
     getCurrentUser()
       .then((user) => {
+        setIsGuest(!user);
         setFullName(
           (user?.user_metadata.full_name as string | undefined) ?? "",
         );
         setEmail(user?.email ?? "");
       })
-      .catch(() => undefined);
+      .catch(() => setIsGuest(true));
   }, []);
 
   async function saveProfile(event: React.FormEvent<HTMLFormElement>) {
@@ -112,72 +115,94 @@ export default function ProfilePage() {
           <EmptyState message="Non hai ancora sessioni salvate. Inizia un allenamento e qui troverai i tuoi progressi." />
         ) : null}
       </div>
-      <section className="mt-14 border-t border-[var(--border)] pt-8">
-        <h2 className="text-xl font-semibold tracking-[-0.02em]">
-          I tuoi dati
-        </h2>
-        <p className="mt-2 text-sm text-[var(--muted)]">
-          Mantieni aggiornate le informazioni del tuo account.
-        </p>
-        <form className="mt-6 space-y-4" onSubmit={saveProfile}>
-          <label className="block text-sm font-medium">
-            Nome
-            <input
-              value={fullName}
-              onChange={(event) => setFullName(event.target.value)}
-              autoComplete="name"
-              className="mt-2 min-h-12 w-full rounded-[var(--radius-control)] border border-[var(--border)] bg-[var(--surface)] px-4 outline-none focus:border-[var(--accent)]"
-              placeholder="Il tuo nome"
-            />
-          </label>
-          <label className="block text-sm font-medium">
-            Email
-            <input
-              value={email}
-              onChange={(event) => setEmail(event.target.value)}
-              type="email"
-              autoComplete="email"
-              required
-              className="mt-2 min-h-12 w-full rounded-[var(--radius-control)] border border-[var(--border)] bg-[var(--surface)] px-4 outline-none focus:border-[var(--accent)]"
-            />
-          </label>
-          <p className="text-sm text-[var(--muted)]">
-            Se modifichi l’email, potresti dover confermare il nuovo indirizzo.
+      {isGuest && !loading ? (
+        <section className="mt-8 rounded-[var(--radius-card)] border border-[var(--border)] bg-[var(--primary-soft)] p-5">
+          <h2 className="font-medium">Stai usando la modalità demo</h2>
+          <p className="mt-1 text-sm text-[var(--muted)]">
+            Accedi per conservare risultati e progressi oltre questo
+            dispositivo.
           </p>
-          <button
-            type="submit"
-            disabled={saving}
-            className="min-h-11 rounded-[var(--radius-control)] bg-[var(--primary)] px-5 text-sm font-medium text-white disabled:opacity-50"
+          <Link
+            href="/login?next=/profile"
+            className="mt-4 inline-block text-sm font-medium text-[var(--primary)]"
           >
-            {saving ? "Salvataggio…" : "Salva modifiche"}
-          </button>
-          {profileMessage ? (
-            <p className="text-sm text-[var(--muted)]" role="status">
-              {profileMessage}
+            Accedi o crea un account
+          </Link>
+        </section>
+      ) : null}
+      {!isGuest ? (
+        <>
+          <section className="mt-14 border-t border-[var(--border)] pt-8">
+            <h2 className="text-xl font-semibold tracking-[-0.02em]">
+              I tuoi dati
+            </h2>
+            <p className="mt-2 text-sm text-[var(--muted)]">
+              Mantieni aggiornate le informazioni del tuo account.
             </p>
-          ) : null}
-        </form>
-      </section>
-      <section className="mt-12 border-t border-[var(--border)] pt-8">
-        <h2 className="text-xl font-semibold tracking-[-0.02em]">Sicurezza</h2>
-        <p className="mt-2 text-sm text-[var(--muted)]">
-          Puoi aggiornare la password in qualsiasi momento.
-        </p>
-        <button
-          type="button"
-          onClick={() => router.push("/forgot-password")}
-          className="mt-5 min-h-11 rounded-[var(--radius-control)] border border-[var(--border)] px-5 text-sm font-medium"
-        >
-          Reimposta password
-        </button>
-        <button
-          type="button"
-          onClick={logout}
-          className="ml-3 min-h-11 px-3 text-sm font-medium text-[var(--muted)]"
-        >
-          Esci dall’account
-        </button>
-      </section>
+            <form className="mt-6 space-y-4" onSubmit={saveProfile}>
+              <label className="block text-sm font-medium">
+                Nome
+                <input
+                  value={fullName}
+                  onChange={(event) => setFullName(event.target.value)}
+                  autoComplete="name"
+                  className="mt-2 min-h-12 w-full rounded-[var(--radius-control)] border border-[var(--border)] bg-[var(--surface)] px-4 outline-none focus:border-[var(--accent)]"
+                  placeholder="Il tuo nome"
+                />
+              </label>
+              <label className="block text-sm font-medium">
+                Email
+                <input
+                  value={email}
+                  onChange={(event) => setEmail(event.target.value)}
+                  type="email"
+                  autoComplete="email"
+                  required
+                  className="mt-2 min-h-12 w-full rounded-[var(--radius-control)] border border-[var(--border)] bg-[var(--surface)] px-4 outline-none focus:border-[var(--accent)]"
+                />
+              </label>
+              <p className="text-sm text-[var(--muted)]">
+                Se modifichi l’email, potresti dover confermare il nuovo
+                indirizzo.
+              </p>
+              <button
+                type="submit"
+                disabled={saving}
+                className="min-h-11 rounded-[var(--radius-control)] bg-[var(--primary)] px-5 text-sm font-medium text-white disabled:opacity-50"
+              >
+                {saving ? "Salvataggio…" : "Salva modifiche"}
+              </button>
+              {profileMessage ? (
+                <p className="text-sm text-[var(--muted)]" role="status">
+                  {profileMessage}
+                </p>
+              ) : null}
+            </form>
+          </section>
+          <section className="mt-12 border-t border-[var(--border)] pt-8">
+            <h2 className="text-xl font-semibold tracking-[-0.02em]">
+              Sicurezza
+            </h2>
+            <p className="mt-2 text-sm text-[var(--muted)]">
+              Puoi aggiornare la password in qualsiasi momento.
+            </p>
+            <button
+              type="button"
+              onClick={() => router.push("/forgot-password")}
+              className="mt-5 min-h-11 rounded-[var(--radius-control)] border border-[var(--border)] px-5 text-sm font-medium"
+            >
+              Reimposta password
+            </button>
+            <button
+              type="button"
+              onClick={logout}
+              className="ml-3 min-h-11 px-3 text-sm font-medium text-[var(--muted)]"
+            >
+              Esci dall’account
+            </button>
+          </section>
+        </>
+      ) : null}
       <section className="mt-12 border-t border-[var(--border)] pt-8">
         <h2 className="text-xl font-semibold tracking-[-0.02em]">Account</h2>
         <p className="mt-2 text-sm text-[var(--muted)]">

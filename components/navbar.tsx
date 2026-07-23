@@ -1,12 +1,14 @@
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { UserRound } from "lucide-react";
 import { getCurrentUser, signOut } from "@/lib/auth-service";
 
 export function Navbar({ quizMode = false }: { quizMode?: boolean }) {
   const [email, setEmail] = useState<string>();
   const [isDemo, setIsDemo] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     if (new URLSearchParams(window.location.search).get("demo") === "1")
@@ -21,8 +23,15 @@ export function Navbar({ quizMode = false }: { quizMode?: boolean }) {
   }, []);
 
   async function logout() {
-    await signOut();
-    setEmail(undefined);
+    try {
+      await signOut();
+    } finally {
+      localStorage.removeItem("ocf-demo");
+      setEmail(undefined);
+      setIsDemo(false);
+      router.replace("/");
+      router.refresh();
+    }
   }
 
   return (
