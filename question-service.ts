@@ -55,9 +55,7 @@ export const getAllQuestions = () => allQuestions;
 export const getQuestionById = (id: number) =>
   allQuestions.find((question) => question.id === id);
 export const getRandomQuestions = (count: number) =>
-  shuffle(allQuestions)
-    .slice(0, count)
-    .map(shuffleQuestion);
+  shuffle(allQuestions).slice(0, count).map(shuffleQuestion);
 export const getQuestionsByTopic = (topic: string) =>
   shuffle(
     allQuestions.filter(

@@ -27,9 +27,15 @@ export default function ResultPage() {
     );
   return (
     <PageShell>
-      <p className="text-sm font-semibold uppercase tracking-widest text-green-600">Quiz completato</p>
-      <h1 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">{result.score}% corrette</h1>
-      <p className="mt-2 text-[var(--muted)]">Ecco il riepilogo della tua sessione.</p>
+      <p className="text-sm font-semibold tracking-widest text-green-600 uppercase">
+        Quiz completato
+      </p>
+      <h1 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
+        {result.score}% corrette
+      </h1>
+      <p className="mt-2 text-[var(--muted)]">
+        Ecco il riepilogo della tua sessione.
+      </p>
       <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
         <ScoreCard label="Corrette" value={result.correctAnswers} />
         <ScoreCard label="Errate" value={result.wrongAnswers} />

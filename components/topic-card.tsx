@@ -11,10 +11,13 @@ export function TopicCard({ topic, count }: { topic: string; count: number }) {
         <span className="min-w-0 flex-1">
           <span className="block font-bold">{topic}</span>
           <span className="mt-1 block text-sm text-[var(--muted)]">
-          {count} domande disponibili
+            {count} domande disponibili
           </span>
         </span>
-        <ArrowUpRight className="h-5 w-5 text-[var(--muted)] transition group-hover:text-[var(--primary)]" aria-hidden="true" />
+        <ArrowUpRight
+          className="h-5 w-5 text-[var(--muted)] transition group-hover:text-[var(--primary)]"
+          aria-hidden="true"
+        />
       </Card>
     </Link>
   );

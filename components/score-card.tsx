@@ -1,5 +1,11 @@
 import { Card } from "@/components/ui/card";
-import { BarChart3, CheckCircle2, CircleAlert, Clock3, ListChecks } from "lucide-react";
+import {
+  BarChart3,
+  CheckCircle2,
+  CircleAlert,
+  Clock3,
+  ListChecks,
+} from "lucide-react";
 export function ScoreCard({
   label,
   value,
