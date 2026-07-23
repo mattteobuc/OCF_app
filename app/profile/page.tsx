@@ -20,30 +20,30 @@ export default function ProfilePage() {
   const hasStats = Boolean(stats?.completedQuizzes);
   return (
     <PageShell>
-      <p className="text-sm font-semibold tracking-widest text-[var(--primary)] uppercase">
-        Il tuo spazio
+      <p className="text-sm font-medium text-[var(--accent)]">
+        Il tuo percorso
       </p>
-      <h1 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
-        Profilo e statistiche
+      <h1 className="mt-3 text-[34px] leading-[1.1] font-semibold tracking-[-0.035em] sm:text-[42px]">
+        I tuoi progressi
       </h1>
       <p className="mt-3 text-[var(--muted)]">
         {loading
-          ? "Caricamento delle tue statistiche..."
+          ? "Stiamo preparando il tuo riepilogo."
           : stats
-            ? "I tuoi progressi vengono aggiornati dopo ogni simulazione."
-            : "Accedi per memorizzare i risultati e visualizzare i tuoi progressi."}
+            ? "Ogni sessione completata rende più chiaro il tuo percorso."
+            : "Accedi per ritrovare qui il tuo andamento."}
       </p>
       <div className="mt-6 grid grid-cols-2 gap-3">
         <ScoreCard
-          label="Quiz svolti"
+          label="Sessioni concluse"
           value={loading ? "..." : (stats?.completedQuizzes ?? "—")}
         />
         <ScoreCard
-          label="Domande risposte"
+          label="Quesiti affrontati"
           value={loading ? "..." : (stats?.answeredQuestions ?? "—")}
         />
         <ScoreCard
-          label="Percentuale corrette"
+          label="Accuratezza"
           value={loading ? "..." : stats ? `${stats.accuracy}%` : "—"}
         />
         <ScoreCard
@@ -56,16 +56,18 @@ export default function ProfilePage() {
           <EmptyState message="Non è stato possibile caricare le statistiche. Controlla la configurazione Supabase." />
         ) : hasStats && stats?.latestQuiz ? (
           <div className="rounded-[var(--radius-card)] border border-[var(--border)] bg-[var(--surface)] p-5 shadow-[var(--shadow-card)]">
-            <p className="text-sm font-semibold text-[var(--muted)]">
-              Ultimo quiz
+            <p className="text-sm font-medium text-[var(--muted)]">
+              Ultima sessione
             </p>
-            <p className="mt-2 text-2xl font-bold">{stats.latestQuiz.score}%</p>
+            <p className="mt-2 text-2xl font-semibold tracking-[-0.03em]">
+              {stats.latestQuiz.score}%
+            </p>
             <p className="mt-1 text-sm text-[var(--muted)]">
-              {stats.latestQuiz.totalQuestions} domande completate
+              {stats.latestQuiz.totalQuestions} quesiti completati
             </p>
           </div>
         ) : !loading ? (
-          <EmptyState message="Nessun quiz salvato. Completa una simulazione per iniziare a costruire le tue statistiche." />
+          <EmptyState message="Non hai ancora sessioni salvate. Inizia un allenamento e qui troverai i tuoi progressi." />
         ) : null}
       </div>
     </PageShell>

@@ -131,12 +131,12 @@ export function QuizClient({
       </Card>
     );
   return (
-    <div className="mx-auto max-w-3xl">
-      <div className="mb-5 flex items-center justify-between gap-3">
+    <div className="mx-auto max-w-[720px]">
+      <div className="mb-8 flex items-center justify-between gap-3">
         <button
           type="button"
           onClick={() => setExitDialogOpen(true)}
-          className="inline-flex items-center gap-2 rounded-lg px-2 py-2 text-sm font-semibold text-[var(--muted)] transition hover:bg-[var(--surface-muted)] hover:text-[var(--foreground)]"
+          className="inline-flex min-h-11 items-center gap-2 rounded-[var(--radius-control)] px-3 text-sm font-medium text-[var(--muted)] transition duration-200 hover:bg-[var(--surface-muted)] hover:text-[var(--foreground)]"
         >
           <ArrowLeft className="h-4 w-4" aria-hidden="true" />
           {exitLabel}
@@ -148,14 +148,14 @@ export function QuizClient({
             setElapsedSeconds(getElapsedSeconds());
             setPausedAt(Date.now());
           }}
-          className="inline-flex items-center gap-2 rounded-lg px-2 py-2 text-sm font-semibold text-[var(--muted)] transition hover:bg-[var(--surface-muted)] hover:text-[var(--foreground)]"
+          className="inline-flex min-h-11 items-center gap-2 rounded-[var(--radius-control)] px-3 text-sm font-medium text-[var(--muted)] transition duration-200 hover:bg-[var(--surface-muted)] hover:text-[var(--foreground)]"
         >
           <Pause className="h-4 w-4" aria-hidden="true" />
           Pausa
         </button>
       </div>
       <QuizProgress current={index + 1} total={total} />
-      <div className="mt-7">
+      <div className="mt-8">
         <QuestionCard
           question={question}
           selectedAnswer={answer}
@@ -167,7 +167,7 @@ export function QuizClient({
       </div>
       {pausedAt ? (
         <div
-          className="fixed inset-0 z-20 flex items-center justify-center bg-slate-950/45 p-5 backdrop-blur-sm"
+          className="fixed inset-0 z-20 flex items-center justify-center bg-[#17212b]/45 p-5 backdrop-blur-sm"
           role="dialog"
           aria-modal="true"
           aria-labelledby="pause-title"
@@ -177,11 +177,14 @@ export function QuizClient({
               className="mx-auto h-8 w-8 text-[var(--primary)]"
               aria-hidden="true"
             />
-            <h2 id="pause-title" className="mt-4 text-xl font-bold">
-              Quiz in pausa
+            <h2
+              id="pause-title"
+              className="mt-4 text-xl font-semibold tracking-[-0.02em]"
+            >
+              Prenditi una pausa
             </h2>
             <p className="mt-2 text-sm text-[var(--muted)]">
-              Il tempo non scorre finché non riprendi.
+              Il tempo resta fermo. Riprendi quando vuoi.
             </p>
             <Button className="mt-6 w-full" onClick={resume}>
               <Play className="mr-2 inline h-4 w-4" aria-hidden="true" />
@@ -190,7 +193,7 @@ export function QuizClient({
             <button
               type="button"
               onClick={() => setExitDialogOpen(true)}
-              className="mt-3 text-sm font-semibold text-[var(--muted)] hover:text-[var(--foreground)]"
+              className="mt-4 text-sm font-medium text-[var(--muted)] hover:text-[var(--foreground)]"
             >
               Esci dal quiz
             </button>
@@ -199,7 +202,7 @@ export function QuizClient({
       ) : null}
       {exitDialogOpen ? (
         <div
-          className="fixed inset-0 z-30 flex items-center justify-center bg-slate-950/45 p-5 backdrop-blur-sm"
+          className="fixed inset-0 z-30 flex items-center justify-center bg-[#17212b]/45 p-5 backdrop-blur-sm"
           role="dialog"
           aria-modal="true"
           aria-labelledby="exit-title"
@@ -207,12 +210,15 @@ export function QuizClient({
           <Card className="w-full max-w-sm">
             <div className="flex items-start justify-between gap-4">
               <div>
-                <h2 id="exit-title" className="text-xl font-bold">
-                  Uscire dal quiz?
+                <h2
+                  id="exit-title"
+                  className="text-xl font-semibold tracking-[-0.02em]"
+                >
+                  Mettere in pausa e uscire?
                 </h2>
                 <p className="mt-2 text-sm text-[var(--muted)]">
-                  Salveremo il tuo avanzamento: potrai riprendere il quiz dalla
-                  dashboard.
+                  Salveremo l’avanzamento. Potrai riprendere dalla tua
+                  preparazione.
                 </p>
               </div>
               <X
@@ -224,12 +230,12 @@ export function QuizClient({
               <button
                 type="button"
                 onClick={() => setExitDialogOpen(false)}
-                className="flex-1 rounded-[var(--radius-control)] border border-[var(--border)] px-4 py-3 text-sm font-semibold"
+                className="flex-1 rounded-[var(--radius-control)] border border-[var(--border)] px-4 py-3 text-sm font-medium"
               >
-                Continua
+                Resta qui
               </button>
               <Button className="flex-1" onClick={exitQuiz}>
-                Esci
+                Salva ed esci
               </Button>
             </div>
           </Card>

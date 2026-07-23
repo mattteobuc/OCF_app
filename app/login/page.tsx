@@ -79,26 +79,26 @@ export default function LoginPage() {
   }
 
   return (
-    <main className="mx-auto flex min-h-screen max-w-md flex-col justify-center px-6">
-      <div className="mb-8 flex h-12 w-12 items-center justify-center rounded-2xl bg-[var(--primary)] font-bold text-white shadow-sm">
-        O
+    <main className="mx-auto flex min-h-screen max-w-md flex-col justify-center px-6 py-12">
+      <div className="mb-8 flex h-10 w-10 items-center justify-center rounded-full bg-[var(--primary)] text-[11px] font-semibold tracking-tight text-white">
+        OCF
       </div>
-      <p className="mb-3 text-sm font-semibold tracking-widest text-[var(--primary)] uppercase">
-        Quiz OCF
+      <p className="mb-4 text-sm font-medium text-[var(--accent)]">
+        Il tuo spazio di studio
       </p>
-      <h1 className="text-3xl font-bold tracking-tight">
+      <h1 className="text-[32px] leading-[1.15] font-semibold tracking-[-0.035em]">
         {mode === "login"
-          ? "Accedi e continua a studiare"
-          : "Crea il tuo account"}
+          ? "Riprendi il tuo percorso"
+          : "Inizia con il tuo account"}
       </h1>
       <p className="mt-3 text-[var(--muted)]">
         {mode === "login"
-          ? "Accedi per ritrovare i tuoi progressi."
-          : "Salva i risultati e monitora la tua preparazione."}
+          ? "I tuoi progressi sono qui, pronti quando lo sei tu."
+          : "Conserva i risultati e studia con continuità."}
       </p>
 
       <div
-        className="mt-8 grid grid-cols-2 rounded-[var(--radius-control)] bg-[var(--surface-muted)] p-1"
+        className="mt-9 grid grid-cols-2 rounded-[var(--radius-control)] border border-[var(--border)] bg-[var(--surface-muted)] p-1"
         role="tablist"
         aria-label="Modalità autenticazione"
       >
@@ -107,7 +107,7 @@ export default function LoginPage() {
           role="tab"
           aria-selected={mode === "login"}
           onClick={() => switchMode("login")}
-          className={`rounded-[10px] px-3 py-2 text-sm font-semibold transition ${mode === "login" ? "bg-[var(--surface)] text-[var(--foreground)] shadow-sm" : "text-[var(--muted)]"}`}
+          className={`min-h-10 rounded-[8px] px-3 text-sm font-medium transition duration-200 ${mode === "login" ? "bg-[var(--surface)] text-[var(--foreground)] shadow-sm" : "text-[var(--muted)]"}`}
         >
           Accedi
         </button>
@@ -116,7 +116,7 @@ export default function LoginPage() {
           role="tab"
           aria-selected={mode === "register"}
           onClick={() => switchMode("register")}
-          className={`rounded-[10px] px-3 py-2 text-sm font-semibold transition ${mode === "register" ? "bg-[var(--surface)] text-[var(--foreground)] shadow-sm" : "text-[var(--muted)]"}`}
+          className={`min-h-10 rounded-[8px] px-3 text-sm font-medium transition duration-200 ${mode === "register" ? "bg-[var(--surface)] text-[var(--foreground)] shadow-sm" : "text-[var(--muted)]"}`}
         >
           Registrati
         </button>
@@ -133,7 +133,7 @@ export default function LoginPage() {
               onChange={(event) => setFullName(event.target.value)}
               placeholder="Mario Rossi"
               autoComplete="name"
-              className="mt-2 w-full rounded-[var(--radius-control)] border border-[var(--border)] bg-[var(--surface)] px-4 py-3 text-[var(--foreground)] transition outline-none focus:border-[var(--primary)]"
+              className="mt-2 min-h-12 w-full rounded-[var(--radius-control)] border border-[var(--border)] bg-[var(--surface)] px-4 text-[var(--foreground)] transition outline-none placeholder:text-[var(--muted)] focus:border-[var(--accent)]"
             />
           </label>
         ) : null}
@@ -146,7 +146,7 @@ export default function LoginPage() {
             placeholder="nome@email.it"
             autoComplete="email"
             required
-            className="mt-2 w-full rounded-[var(--radius-control)] border border-[var(--border)] bg-[var(--surface)] px-4 py-3 text-[var(--foreground)] transition outline-none focus:border-[var(--primary)]"
+            className="mt-2 min-h-12 w-full rounded-[var(--radius-control)] border border-[var(--border)] bg-[var(--surface)] px-4 text-[var(--foreground)] transition outline-none placeholder:text-[var(--muted)] focus:border-[var(--accent)]"
           />
         </label>
         <label className="mt-4 block text-sm font-medium">
@@ -161,7 +161,7 @@ export default function LoginPage() {
             }
             minLength={6}
             required
-            className="mt-2 w-full rounded-[var(--radius-control)] border border-[var(--border)] bg-[var(--surface)] px-4 py-3 text-[var(--foreground)] transition outline-none focus:border-[var(--primary)]"
+            className="mt-2 min-h-12 w-full rounded-[var(--radius-control)] border border-[var(--border)] bg-[var(--surface)] px-4 text-[var(--foreground)] transition outline-none placeholder:text-[var(--muted)] focus:border-[var(--accent)]"
           />
         </label>
         <Button
@@ -173,18 +173,18 @@ export default function LoginPage() {
             ? "Attendi..."
             : mode === "login"
               ? "Accedi"
-              : "Crea account"}
+              : "Crea il tuo account"}
         </Button>
       </form>
 
       {mode === "login" ? (
         <button
           type="button"
-          className="mt-4 text-sm font-semibold text-[var(--primary)] transition hover:text-[var(--primary-hover)] disabled:opacity-50"
+          className="mt-5 text-sm font-medium text-[var(--primary)] transition duration-200 hover:text-[var(--primary-hover)] disabled:opacity-50"
           disabled={loading || !email}
           onClick={sendMagicLink}
         >
-          Oppure inviami un magic link
+          Inviami invece un link di accesso
         </button>
       ) : null}
       {message && (
@@ -194,10 +194,10 @@ export default function LoginPage() {
       )}
       <button
         type="button"
-        className="mt-6 text-sm font-semibold text-[var(--primary)] transition hover:text-[var(--primary-hover)]"
+        className="mt-8 text-sm font-medium text-[var(--muted)] transition duration-200 hover:text-[var(--foreground)]"
         onClick={() => router.push("/dashboard")}
       >
-        Continua in modalità demo
+        Esplora prima in modalità demo
       </button>
     </main>
   );

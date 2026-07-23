@@ -20,18 +20,18 @@ export function ContinueQuizCard() {
 
   return (
     <Link href="/quiz/resume" className="mt-5 block">
-      <Card className="group border-[var(--primary)] bg-[var(--primary-soft)] hover:-translate-y-0.5 hover:shadow-[var(--shadow-hover)]">
+      <Card className="group border-[var(--accent)]/25 bg-[var(--primary-soft)] py-4 hover:-translate-y-0.5 hover:shadow-[var(--shadow-hover)]">
         <div className="flex items-center gap-4">
-          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[var(--primary)] text-white">
+          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--accent)] text-white">
             <Play className="h-5 w-5 fill-current" aria-hidden="true" />
           </span>
           <div className="min-w-0 flex-1">
-            <p className="font-bold">Riprendi quiz</p>
+            <p className="font-medium">Riprendi da dove eri arrivato</p>
             <p className="mt-1 text-sm text-[var(--muted)]">
               Domanda {quiz.currentIndex + 1} di {quiz.questionIds.length}
             </p>
           </div>
-          <span className="text-sm font-semibold text-[var(--primary)]">
+          <span className="text-sm font-medium text-[var(--accent)]">
             Riprendi
           </span>
         </div>

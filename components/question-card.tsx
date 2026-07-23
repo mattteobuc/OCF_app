@@ -23,22 +23,20 @@ export function QuestionCard({
     (answer) => answer.id === selectedAnswer,
   );
   return (
-    <Card className="mx-auto max-w-3xl p-5 sm:p-8">
-      <article className="space-y-6">
-        <div className="flex flex-wrap items-center gap-2 text-xs font-semibold tracking-wide text-[var(--muted)] uppercase">
-          <span className="rounded-full bg-[var(--primary-soft)] px-3 py-1 text-[var(--primary)]">
+    <Card className="mx-auto max-w-[720px] p-5 sm:p-9">
+      <article className="space-y-8">
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-[var(--muted)]">
+          <span className="font-medium text-[var(--accent)]">
             {question.topic}
           </span>
+          <span aria-hidden="true">·</span>
           <span>{question.subtopic}</span>
-          <span className="ml-auto rounded-full bg-[var(--surface-muted)] px-3 py-1">
-            Livello {question.difficulty}
-          </span>
         </div>
         <div>
-          <p className="mb-2 text-sm font-medium text-[var(--muted)]">
-            Domanda {question.id}
+          <p className="mb-4 text-sm text-[var(--muted)]">
+            Quesito {question.id} · Livello {question.difficulty}
           </p>
-          <h1 className="text-[22px] leading-relaxed font-bold tracking-tight sm:text-2xl">
+          <h1 className="text-[24px] leading-[1.35] font-semibold tracking-[-0.025em] sm:text-[28px]">
             {question.question}
           </h1>
         </div>
@@ -64,17 +62,17 @@ export function QuestionCard({
         </div>
         {confirmed ? (
           <div
-            className={`rounded-[var(--radius-control)] border p-4 ${selected?.correct ? "border-green-500 bg-[var(--success-soft)] text-[var(--success-foreground)]" : "border-red-500 bg-[var(--error-soft)] text-[var(--error-foreground)]"}`}
+            className={`rounded-[var(--radius-control)] border p-4 ${selected?.correct ? "border-[var(--success)] bg-[var(--success-soft)] text-[var(--success-foreground)]" : "border-[var(--error)] bg-[var(--error-soft)] text-[var(--error-foreground)]"}`}
           >
-            <p className="font-bold">
+            <p className="font-medium">
               {selected?.correct
-                ? "Corretto!"
-                : `Errato. Risposta corretta: ${correct?.id}`}
+                ? "Risposta corretta."
+                : `La risposta corretta è ${correct?.id}.`}
             </p>
           </div>
         ) : null}
         {confirmed && (question.explanation || question.reference) ? (
-          <div className="space-y-3 rounded-[var(--radius-control)] border border-[var(--border)] bg-[var(--surface-muted)] p-4">
+          <div className="space-y-4 border-t border-[var(--border)] pt-6">
             {question.explanation ? (
               <div className="flex gap-3">
                 <Lightbulb
@@ -82,7 +80,7 @@ export function QuestionCard({
                   aria-hidden="true"
                 />
                 <div>
-                  <p className="text-sm font-bold">Spiegazione</p>
+                  <p className="text-sm font-medium">Perché è corretta</p>
                   <p className="mt-1 text-sm leading-relaxed text-[var(--muted)]">
                     {question.explanation}
                   </p>
@@ -90,13 +88,13 @@ export function QuestionCard({
               </div>
             ) : null}
             {question.reference ? (
-              <div className="flex gap-3 border-t border-[var(--border)] pt-3">
+              <div className="flex gap-3 border-t border-[var(--border)] pt-4">
                 <BookOpenText
                   className="mt-0.5 h-5 w-5 shrink-0 text-[var(--primary)]"
                   aria-hidden="true"
                 />
                 <div>
-                  <p className="text-sm font-bold">Riferimento normativo</p>
+                  <p className="text-sm font-medium">Riferimento normativo</p>
                   <p className="mt-1 text-sm leading-relaxed text-[var(--muted)]">
                     {question.reference}
                   </p>
@@ -110,7 +108,7 @@ export function QuestionCard({
           disabled={!selectedAnswer}
           onClick={confirmed ? onNext : onConfirm}
         >
-          {confirmed ? "Successiva" : "Conferma risposta"}
+          {confirmed ? "Domanda successiva" : "Conferma risposta"}
         </Button>
       </article>
     </Card>

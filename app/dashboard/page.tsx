@@ -3,7 +3,7 @@ import { PageShell } from "@/components/page-shell";
 import { Card } from "@/components/ui/card";
 import { TopicCard } from "@/components/topic-card";
 import { ContinueQuizCard } from "@/components/continue-quiz-card";
-import { ArrowRight, BarChart3, Play, Sparkles } from "lucide-react";
+import { ArrowRight, BarChart3, Play } from "lucide-react";
 import { getAllQuestions, getTopics } from "@/lib/question-service";
 
 export default function DashboardPage() {
@@ -11,21 +11,21 @@ export default function DashboardPage() {
   return (
     <PageShell>
       <section>
-        <p className="text-sm font-semibold tracking-widest text-[var(--primary)] uppercase">
-          Area studio
+        <p className="text-sm font-medium text-[var(--accent)]">
+          La tua preparazione
         </p>
-        <h1 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
-          Cosa vuoi allenare?
+        <h1 className="mt-3 text-[34px] leading-[1.1] font-semibold tracking-[-0.035em] sm:text-[42px]">
+          Bentornato.
         </h1>
         <p className="mt-3 max-w-xl text-[var(--muted)]">
-          Scegli una simulazione rapida o concentrati su un argomento specifico.
+          Dedica qualche minuto a ciò che conta oggi.
         </p>
         <ContinueQuizCard />
-        <div className="mt-8 grid gap-4 sm:grid-cols-2">
+        <div className="mt-9 grid gap-3 sm:grid-cols-2">
           <Link href="/quiz">
-            <Card className="group h-full border-blue-700 bg-blue-700 text-white shadow-[0_12px_30px_rgb(37_99_235_/_0.18)] hover:-translate-y-1 hover:bg-blue-700">
+            <Card className="group h-full border-[var(--primary)] bg-[var(--primary)] text-white hover:-translate-y-0.5 hover:shadow-[var(--shadow-hover)]">
               <div className="flex items-center justify-between">
-                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-white/15">
+                <span className="flex h-10 w-10 items-center justify-center rounded-[var(--radius-control)] bg-white/12">
                   <Play className="h-5 w-5 fill-current" aria-hidden="true" />
                 </span>
                 <ArrowRight
@@ -33,16 +33,16 @@ export default function DashboardPage() {
                   aria-hidden="true"
                 />
               </div>
-              <p className="mt-6 font-bold">Nuova simulazione</p>
-              <p className="mt-2 text-sm text-blue-100">
-                5 domande per iniziare subito
+              <p className="mt-7 text-[17px] font-medium">Allenamento rapido</p>
+              <p className="mt-2 text-sm text-white/70">
+                Cinque domande, il ritmo giusto per iniziare.
               </p>
             </Card>
           </Link>
           <Link href="/profile">
             <Card className="group h-full hover:-translate-y-1 hover:shadow-[var(--shadow-hover)]">
               <div className="flex items-center justify-between">
-                <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-[var(--surface-muted)] text-[var(--primary)]">
+                <span className="flex h-10 w-10 items-center justify-center rounded-[var(--radius-control)] bg-[var(--surface-muted)] text-[var(--primary)]">
                   <BarChart3 className="h-5 w-5" aria-hidden="true" />
                 </span>
                 <ArrowRight
@@ -50,28 +50,24 @@ export default function DashboardPage() {
                   aria-hidden="true"
                 />
               </div>
-              <p className="mt-6 font-bold">Progressi e statistiche</p>
+              <p className="mt-7 text-[17px] font-medium">I tuoi progressi</p>
               <p className="mt-2 text-sm text-[var(--muted)]">
-                Segui i tuoi risultati
+                Guarda come sta andando il tuo percorso.
               </p>
             </Card>
           </Link>
         </div>
       </section>
-      <section id="argomenti" className="mt-10 scroll-mt-24">
-        <div className="flex items-end justify-between gap-4">
+      <section id="argomenti" className="mt-16 scroll-mt-24">
+        <div>
           <div>
-            <h2 className="text-xl font-bold tracking-tight">
-              Quiz per argomento
+            <h2 className="text-xl font-semibold tracking-[-0.02em]">
+              Scegli un argomento
             </h2>
             <p className="mt-1 text-sm text-[var(--muted)]">
-              Ripassa esattamente ciò che ti serve.
+              Concentrati su un’area alla volta.
             </p>
           </div>
-          <Sparkles
-            className="h-5 w-5 text-[var(--warning)]"
-            aria-hidden="true"
-          />
         </div>
         <div className="mt-5 grid gap-3 sm:grid-cols-2">
           {getTopics().map((topic) => (

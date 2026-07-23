@@ -24,19 +24,21 @@ export default function ResultPage() {
   if (!session)
     return (
       <PageShell>
-        <p>Nessun risultato disponibile.</p>
+        <p className="text-[var(--muted)]">
+          Non troviamo un risultato da mostrare.
+        </p>
       </PageShell>
     );
   return (
     <PageShell>
-      <p className="text-sm font-semibold tracking-widest text-green-600 uppercase">
-        Quiz completato
+      <p className="text-sm font-medium text-[var(--accent)]">
+        Sessione completata
       </p>
-      <h1 className="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">
-        {session.result.score}% corrette
+      <h1 className="mt-3 text-[34px] leading-[1.1] font-semibold tracking-[-0.035em] sm:text-[42px]">
+        {session.result.score}% di risposte corrette
       </h1>
       <p className="mt-2 text-[var(--muted)]">
-        Ecco il riepilogo della tua sessione.
+        Un passo in più nella tua preparazione.
       </p>
       <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
         <ScoreCard label="Corrette" value={session.result.correctAnswers} />
@@ -45,13 +47,13 @@ export default function ResultPage() {
         <ScoreCard label="Tempo" value={`${session.result.durationSeconds}s`} />
       </div>
       <Link className="mt-7 block" href="/quiz">
-        <Button className="w-full">Nuovo quiz</Button>
+        <Button className="w-full">Inizia un altro quiz</Button>
       </Link>
       <Link
-        className="mt-4 block text-center text-sm text-blue-700"
+        className="mt-5 block text-center text-sm font-medium text-[var(--primary)]"
         href="/dashboard"
       >
-        Torna alla dashboard
+        Torna alla tua preparazione
       </Link>
     </PageShell>
   );

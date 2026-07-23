@@ -19,24 +19,24 @@ export function Navbar({ quizMode = false }: { quizMode?: boolean }) {
   }
 
   return (
-    <header className="sticky top-0 z-10 border-b border-[var(--border)] bg-[color:var(--surface)]/90 backdrop-blur">
-      <nav className="mx-auto flex h-[73px] max-w-5xl items-center justify-between px-5 sm:px-8">
+    <header className="sticky top-0 z-10 border-b border-[var(--border)] bg-[color:var(--background)]/85 backdrop-blur-xl">
+      <nav className="mx-auto flex h-16 max-w-[800px] items-center justify-between px-5 sm:px-8">
         {quizMode ? (
-          <div className="flex items-center gap-3 font-bold tracking-tight text-[var(--foreground)]">
-            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-[var(--primary)] text-sm text-white shadow-sm">
-              O
+          <div className="flex items-center gap-2.5 text-[15px] font-semibold tracking-tight text-[var(--foreground)]">
+            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--primary)] text-[11px] font-semibold tracking-tight text-white">
+              OCF
             </span>
-            <span>Quiz OCF</span>
+            <span>Studio</span>
           </div>
         ) : (
           <Link
             href="/dashboard"
-            className="flex items-center gap-3 font-bold tracking-tight text-[var(--foreground)]"
+            className="flex items-center gap-2.5 text-[15px] font-semibold tracking-tight text-[var(--foreground)]"
           >
-            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-[var(--primary)] text-sm text-white shadow-sm">
-              O
+            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--primary)] text-[11px] font-semibold tracking-tight text-white">
+              OCF
             </span>
-            <span>Quiz OCF</span>
+            <span>Studio</span>
           </Link>
         )}
         {!quizMode ? (
@@ -44,7 +44,7 @@ export function Navbar({ quizMode = false }: { quizMode?: boolean }) {
             <Link
               href="/profile"
               title={email ?? "Profilo"}
-              className="flex items-center gap-2 rounded-xl px-3 py-2 text-sm font-semibold text-[var(--muted)] transition hover:bg-[var(--surface-muted)] hover:text-[var(--foreground)]"
+              className="flex min-h-11 items-center gap-2 rounded-[var(--radius-control)] px-3 text-sm font-medium text-[var(--muted)] transition duration-200 hover:bg-[var(--surface-muted)] hover:text-[var(--foreground)]"
             >
               <UserRound className="h-4 w-4" aria-hidden="true" />
               <span className="hidden max-w-[180px] truncate sm:inline">
@@ -55,16 +55,14 @@ export function Navbar({ quizMode = false }: { quizMode?: boolean }) {
               <button
                 type="button"
                 onClick={logout}
-                className="rounded-xl px-2 py-2 text-sm font-semibold text-[var(--muted)] transition hover:bg-[var(--surface-muted)] hover:text-[var(--foreground)]"
+                className="min-h-11 rounded-[var(--radius-control)] px-3 text-sm font-medium text-[var(--muted)] transition duration-200 hover:bg-[var(--surface-muted)] hover:text-[var(--foreground)]"
               >
                 Esci
               </button>
             ) : null}
           </div>
         ) : (
-          <span className="text-sm font-medium text-[var(--muted)]">
-            Sessione in corso
-          </span>
+          <span className="text-sm text-[var(--muted)]">Quiz in corso</span>
         )}
       </nav>
     </header>

@@ -10,7 +10,7 @@ export function PageShell({
   return (
     <>
       <Navbar quizMode={quizMode} />
-      <main className="mx-auto min-h-[calc(100vh-73px)] max-w-5xl px-5 py-8 sm:px-8 sm:py-10">
+      <main className="mx-auto min-h-[calc(100vh-65px)] max-w-[800px] px-5 py-10 sm:px-8 sm:py-14">
         {children}
       </main>
     </>
